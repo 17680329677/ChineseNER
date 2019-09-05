@@ -16,13 +16,13 @@ from utils import print_config, save_config, load_config, test_ner
 from data_utils import load_word2vec, create_input, input_from_line, BatchManager
 
 flags = tf.app.flags
-flags.DEFINE_boolean("clean",       False,      "clean train folder")
+flags.DEFINE_boolean("clean",       True,      "clean train folder")
 flags.DEFINE_boolean("train",       True,      "Wither train the model")
 # configurations for the model
 flags.DEFINE_integer("seg_dim",     20,         "Embedding size for segmentation, 0 if not used")
 flags.DEFINE_integer("char_dim",    100,        "Embedding size for characters")
 flags.DEFINE_integer("lstm_dim",    100,        "Num of hidden units in LSTM")
-flags.DEFINE_string("tag_schema",   "iobes",    "tagging schema iobes or iob")
+flags.DEFINE_string("tag_schema",   "iob",    "tagging schema iobes or iob")
 
 # configurations for training
 flags.DEFINE_float("clip",          5,          "Gradient clip")
@@ -45,9 +45,9 @@ flags.DEFINE_string("config_file",  "config_file",  "File for config")
 flags.DEFINE_string("script",       "conlleval",    "evaluation script")
 flags.DEFINE_string("result_path",  "result",       "Path for results")
 flags.DEFINE_string("emb_file",     "wiki_100.utf8", "Path for pre_trained embedding")
-flags.DEFINE_string("train_file",   os.path.join("data", "example.train"),  "Path for train data")
-flags.DEFINE_string("dev_file",     os.path.join("data", "example.dev"),    "Path for dev data")
-flags.DEFINE_string("test_file",    os.path.join("data", "example.test"),   "Path for test data")
+flags.DEFINE_string("train_file",   os.path.join("data", "train.txt"),  "Path for train data")
+flags.DEFINE_string("dev_file",     os.path.join("data", "dev.txt"),    "Path for dev data")
+flags.DEFINE_string("test_file",    os.path.join("data", "test.txt"),   "Path for test data")
 
 
 FLAGS = tf.app.flags.FLAGS
@@ -222,7 +222,7 @@ def main(_):
 
 
 if __name__ == "__main__":
-    tf.app.run(main)
+    tf.compat.v1.app.run(main)
 
 
 

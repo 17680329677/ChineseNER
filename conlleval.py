@@ -278,7 +278,7 @@ def start_of_chunk(prev_tag, tag, prev_type, type_):
 
 
 def return_report(input_file):
-    with codecs.open(input_file, "r", "utf8") as f:
+    with codecs.open(input_file, "r", "gbk") as f:
         counts = evaluate(f)
     return report_notprint(counts)
 

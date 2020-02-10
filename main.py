@@ -16,8 +16,8 @@ from utils import print_config, save_config, load_config, test_ner
 from data_utils import load_word2vec, create_input, input_from_line, BatchManager
 
 flags = tf.app.flags
-flags.DEFINE_boolean("clean",       True,      "clean train folder")
-flags.DEFINE_boolean("train",       True,      "Wither train the model")
+flags.DEFINE_boolean("clean",       False,      "clean train folder")
+flags.DEFINE_boolean("train",       False,      "Wither train the model")
 # configurations for the model
 flags.DEFINE_integer("seg_dim",     20,         "Embedding size for segmentation, 0 if not used")
 flags.DEFINE_integer("char_dim",    100,        "Embedding size for characters")
@@ -45,9 +45,9 @@ flags.DEFINE_string("config_file",  "config_file",  "File for config")
 flags.DEFINE_string("script",       "conlleval",    "evaluation script")
 flags.DEFINE_string("result_path",  "result",       "Path for results")
 flags.DEFINE_string("emb_file",     "wiki_100.utf8", "Path for pre_trained embedding")
-flags.DEFINE_string("train_file",   os.path.join("data", "train.txt"),  "Path for train data")
-flags.DEFINE_string("dev_file",     os.path.join("data", "dev.txt"),    "Path for dev data")
-flags.DEFINE_string("test_file",    os.path.join("data", "test.txt"),   "Path for test data")
+flags.DEFINE_string("train_file",   os.path.join("data", "law_train1"),  "Path for train data")
+flags.DEFINE_string("dev_file",     os.path.join("data", "law_dev1"),    "Path for dev data")
+flags.DEFINE_string("test_file",    os.path.join("data", "law_test1"),   "Path for test data")
 
 
 FLAGS = tf.app.flags.FLAGS
@@ -199,12 +199,12 @@ def evaluate_line():
     with tf.Session(config=tf_config) as sess:
         model = create_model(sess, Model, FLAGS.ckpt_path, load_word2vec, config, id_to_char, logger)
         while True:
-            # try:
-            #     line = input("请输入测试句子:")
-            #     result = model.evaluate_line(sess, input_from_line(line, char_to_id), id_to_tag)
-            #     print(result)
-            # except Exception as e:
-            #     logger.info(e)
+            try:
+                line = input("请输入测试句子:")
+                result = model.evaluate_line(sess, input_from_line(line, char_to_id), id_to_tag)
+                print(result)
+            except Exception as e:
+                logger.info(e)
 
                 line = input("请输入测试句子:")
                 result = model.evaluate_line(sess, input_from_line(line, char_to_id), id_to_tag)
@@ -222,7 +222,7 @@ def main(_):
 
 
 if __name__ == "__main__":
-    tf.compat.v1.app.run(main)
+    tf.app.run(main)
 
 
 

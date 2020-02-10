@@ -191,22 +191,31 @@ def result_to_json(string, tags):
     entity_name = ""
     entity_start = 0
     idx = 0
-    for char, tag in zip(string, tags):
-        if tag[0] == "S":
-            item["entities"].append({"word": char, "start": idx, "end": idx+1, "type":tag[2:]})
-        elif tag[0] == "B":
-            entity_name += char
-            entity_start = idx
-        elif tag[0] == "I":
-            entity_name += char
-        elif tag[0] == "E":
-            entity_name += char
-            item["entities"].append({"word": entity_name, "start": entity_start, "end": idx + 1, "type": tag[2:]})
-            entity_name = ""
-        else:
-            entity_name = ""
-            entity_start = idx
-        idx += 1
+    # for char, tag in zip(string, tags):
+    #     if tag[0] == "S":
+    #         item["entities"].append({"word": char, "start": idx, "end": idx+1, "type":tag[2:]})
+    #     elif tag[0] == "B":
+    #         entity_name += char
+    #         entity_start = idx
+    #     elif tag[0] == "I":
+    #         entity_name += char
+    #     elif tag[0] == "E":
+    #         entity_name += char
+    #         item["entities"].append({"word": entity_name, "start": entity_start, "end": idx + 1, "type": tag[2:]})
+    #         entity_name = ""
+    #     else:
+    #         entity_name = ""
+    #         entity_start = idx
+    #     idx += 1
+    if len(string) == len(tags):
+        for index in range(len(string)):
+            if tags[index][0] == 'B':
+                entity_name += string[index]
+            elif tags[index][0] == 'I':
+                entity_name += string[index]
+                if (index + 1 < len(tags) and tags[index + 1][0] != 'I') or index == len(string) - 1:
+                    item['entities'].append({"word": entity_name, "type": tags[index][2:]})
+                    entity_name = ''
     return item
 
 

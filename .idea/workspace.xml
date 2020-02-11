@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c942ca5-7fec-4519-bfdc-53c6e263ab28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckpt/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/ckpt/checkpoint" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckpt/ner.ckpt.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/ckpt/ner.ckpt.data-00000-of-00001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckpt/ner.ckpt.index" beforeDir="false" afterPath="$PROJECT_DIR$/ckpt/ner.ckpt.index" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckpt/ner.ckpt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/ckpt/ner.ckpt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_file" beforeDir="false" afterPath="$PROJECT_DIR$/config_file" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dev.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/train.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/law_dev" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/law_dev1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/law_test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/law_test1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/law_train" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/law_train1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/train.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/train.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maps.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/maps.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/ner_predict.utf8" beforeDir="false" afterPath="$PROJECT_DIR$/result/ner_predict.utf8" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/train.log" beforeDir="false" afterPath="$PROJECT_DIR$/train.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="203" column="42" selection-start-line="203" selection-start-column="42" selection-end-line="203" selection-end-column="42" />
+            <state relative-caret-position="61">
+              <caret line="203" column="36" selection-start-line="203" selection-start-column="36" selection-end-line="203" selection-end-column="36" />
               <folding>
                 <element signature="e#16#25#0" expanded="true" />
               </folding>
@@ -42,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="274" column="22" lean-forward="true" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="274" column="21" selection-start-line="274" selection-start-column="21" selection-end-line="274" selection-end-column="21" />
               <folding>
                 <element signature="e#18#36#0" expanded="true" />
               </folding>
@@ -66,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="218" column="15" lean-forward="true" selection-start-line="218" selection-start-column="15" selection-end-line="218" selection-end-column="15" />
+            <state relative-caret-position="82">
+              <caret line="197" column="33" lean-forward="true" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -83,6 +81,7 @@
       <find>train_file</find>
       <find />
       <find>.</find>
+      <find>FB1</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -107,8 +106,8 @@
         <option value="$PROJECT_DIR$/conlleval.py" />
         <option value="$PROJECT_DIR$/data/law_train" />
         <option value="$PROJECT_DIR$/log/train.log" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -134,11 +133,6 @@
             <path>
               <item name="ChineseNER" type="b2602c69:ProjectViewProjectNode" />
               <item name="ChineseNER" type="462c0819:PsiDirectoryNode" />
-              <item name="ckpt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ChineseNER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ChineseNER" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -156,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -230,22 +224,22 @@
       <workItem from="1578448604251" duration="3397000" />
       <workItem from="1581233930247" duration="240000" />
       <workItem from="1581240475148" duration="8924000" />
-      <workItem from="1581302941769" duration="2119000" />
+      <workItem from="1581302941769" duration="19091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41081000" />
+    <option name="totallyTimeSpent" value="58053000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20844504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32697946" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.47067448" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3240469" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.7199414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.58504397" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -272,13 +266,13 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/utils.py</url>
           <line>189</line>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ChineseNER$main.coverage" NAME="main Coverage Results" MODIFIED="1581305052114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ChineseNER$main.coverage" NAME="main Coverage Results" MODIFIED="1581395619853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://E:/anaconda/pkgs/jupyter_core-4.5.0-py_0/site-packages/jupyter_core/application.py" />
@@ -372,16 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/law_train1">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/train.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1030">
-          <caret line="557" lean-forward="true" selection-start-line="557" selection-end-line="557" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ckpt/checkpoint">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -405,10 +389,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/law_dev2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/law_train2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/law_train1">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/train.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54140">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conlleval">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64">
+          <caret line="176" column="45" selection-start-line="176" selection-start-column="45" selection-end-line="176" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="203" column="42" selection-start-line="203" selection-start-column="42" selection-end-line="203" selection-end-column="42" />
+        <state relative-caret-position="61">
+          <caret line="203" column="36" selection-start-line="203" selection-start-column="36" selection-end-line="203" selection-end-column="36" />
           <folding>
             <element signature="e#16#25#0" expanded="true" />
           </folding>
@@ -417,8 +424,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="274" column="22" lean-forward="true" selection-start-line="274" selection-start-column="22" selection-end-line="274" selection-end-column="22" />
+        <state relative-caret-position="136">
+          <caret line="274" column="21" selection-start-line="274" selection-start-column="21" selection-end-line="274" selection-end-column="21" />
           <folding>
             <element signature="e#18#36#0" expanded="true" />
           </folding>
@@ -427,8 +434,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="218" column="15" lean-forward="true" selection-start-line="218" selection-start-column="15" selection-end-line="218" selection-end-column="15" />
+        <state relative-caret-position="82">
+          <caret line="197" column="33" lean-forward="true" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="33" />
         </state>
       </provider>
     </entry>

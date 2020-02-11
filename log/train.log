@@ -1,798 +1,2241 @@
-2020-02-09 18:31:21,289 - log\train.log - INFO - num_chars      :	1636
-2020-02-09 18:31:21,289 - log\train.log - INFO - char_dim       :	100
-2020-02-09 18:31:21,289 - log\train.log - INFO - num_tags       :	7
-2020-02-09 18:31:21,289 - log\train.log - INFO - seg_dim        :	20
-2020-02-09 18:31:21,289 - log\train.log - INFO - lstm_dim       :	100
-2020-02-09 18:31:21,289 - log\train.log - INFO - batch_size     :	20
-2020-02-09 18:31:21,289 - log\train.log - INFO - emb_file       :	wiki_100.utf8
-2020-02-09 18:31:21,289 - log\train.log - INFO - clip           :	5
-2020-02-09 18:31:21,289 - log\train.log - INFO - dropout_keep   :	0.5
-2020-02-09 18:31:21,289 - log\train.log - INFO - optimizer      :	adam
-2020-02-09 18:31:21,289 - log\train.log - INFO - lr             :	0.001
-2020-02-09 18:31:21,289 - log\train.log - INFO - tag_schema     :	iob
-2020-02-09 18:31:21,289 - log\train.log - INFO - pre_emb        :	True
-2020-02-09 18:31:21,289 - log\train.log - INFO - zeros          :	False
-2020-02-09 18:31:21,289 - log\train.log - INFO - lower          :	True
-2020-02-09 18:31:23,086 - log\train.log - INFO - Created model with fresh parameters.
-2020-02-09 18:31:24,601 - log\train.log - INFO - Load pre-trained embedding.
-2020-02-09 18:31:24,601 - log\train.log - INFO - start training
-2020-02-09 18:33:47,179 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:33:55,695 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 58753 phrases; correct: 3.
+2020-02-10 21:02:21,147 - log\train.log - INFO - num_chars      :	1636
+2020-02-10 21:02:21,147 - log\train.log - INFO - char_dim       :	100
+2020-02-10 21:02:21,147 - log\train.log - INFO - num_tags       :	7
+2020-02-10 21:02:21,147 - log\train.log - INFO - seg_dim        :	20
+2020-02-10 21:02:21,147 - log\train.log - INFO - lstm_dim       :	100
+2020-02-10 21:02:21,147 - log\train.log - INFO - batch_size     :	20
+2020-02-10 21:02:21,147 - log\train.log - INFO - emb_file       :	wiki_100.utf8
+2020-02-10 21:02:21,147 - log\train.log - INFO - clip           :	5
+2020-02-10 21:02:21,147 - log\train.log - INFO - dropout_keep   :	0.5
+2020-02-10 21:02:21,147 - log\train.log - INFO - optimizer      :	adam
+2020-02-10 21:02:21,147 - log\train.log - INFO - lr             :	0.001
+2020-02-10 21:02:21,147 - log\train.log - INFO - tag_schema     :	iob
+2020-02-10 21:02:21,147 - log\train.log - INFO - pre_emb        :	True
+2020-02-10 21:02:21,147 - log\train.log - INFO - zeros          :	False
+2020-02-10 21:02:21,147 - log\train.log - INFO - lower          :	True
+2020-02-10 21:02:22,866 - log\train.log - INFO - Created model with fresh parameters.
+2020-02-10 21:02:24,335 - log\train.log - INFO - Load pre-trained embedding.
+2020-02-10 21:02:24,335 - log\train.log - INFO - start training
+2020-02-10 21:04:42,460 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:04:50,178 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 16018 phrases; correct: 0.
 
-2020-02-09 18:33:55,695 - log\train.log - INFO - accuracy:   8.26%; precision:   0.01%; recall:   0.05%; FB1:   0.01
+2020-02-10 21:04:50,178 - log\train.log - INFO - accuracy:   7.92%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:33:55,695 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.02%; FB1:   0.01  14212
+2020-02-10 21:04:50,178 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  2873
 
-2020-02-09 18:33:55,695 - log\train.log - INFO -              PARK: precision:   0.01%; recall:   1.00%; FB1:   0.02  16286
+2020-02-10 21:04:50,178 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  6627
 
-2020-02-09 18:33:55,695 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  28255
+2020-02-10 21:04:50,178 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  6518
 
-2020-02-09 18:33:55,976 - log\train.log - INFO - new best dev f1 score:0.010
-2020-02-09 18:33:56,883 - log\train.log - INFO - model saved
-2020-02-09 18:33:56,883 - log\train.log - INFO - evaluate:test
-2020-02-09 18:34:04,398 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 57750 phrases; correct: 2.
+2020-02-10 21:04:50,178 - log\train.log - INFO - evaluate:test
+2020-02-10 21:04:57,616 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 15621 phrases; correct: 0.
 
-2020-02-09 18:34:04,398 - log\train.log - INFO - accuracy:   8.08%; precision:   0.00%; recall:   0.04%; FB1:   0.01
+2020-02-10 21:04:57,616 - log\train.log - INFO - accuracy:   7.89%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:34:04,398 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  13647
+2020-02-10 21:04:57,616 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  2828
 
-2020-02-09 18:34:04,398 - log\train.log - INFO -              PARK: precision:   0.01%; recall:   2.00%; FB1:   0.03  15814
+2020-02-10 21:04:57,616 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  6486
 
-2020-02-09 18:34:04,398 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  28289
+2020-02-10 21:04:57,616 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  6307
 
-2020-02-09 18:34:04,476 - log\train.log - INFO - new best test f1 score:0.010
-2020-02-09 18:36:39,101 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:36:46,898 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 54948 phrases; correct: 3.
+2020-02-10 21:07:36,022 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:07:43,647 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 33585 phrases; correct: 0.
 
-2020-02-09 18:36:46,898 - log\train.log - INFO - accuracy:  13.73%; precision:   0.01%; recall:   0.05%; FB1:   0.01
+2020-02-10 21:07:43,647 - log\train.log - INFO - accuracy:  19.11%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:36:46,898 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.02%; FB1:   0.01  20807
+2020-02-10 21:07:43,647 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  11465
 
-2020-02-09 18:36:46,898 - log\train.log - INFO -              PARK: precision:   0.01%; recall:   1.00%; FB1:   0.02  19134
+2020-02-10 21:07:43,647 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  8540
 
-2020-02-09 18:36:46,898 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  15007
+2020-02-10 21:07:43,647 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  13580
 
-2020-02-09 18:36:46,992 - log\train.log - INFO - new best dev f1 score:0.010
-2020-02-09 18:36:48,554 - log\train.log - INFO - model saved
-2020-02-09 18:36:48,554 - log\train.log - INFO - evaluate:test
-2020-02-09 18:36:56,164 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 53973 phrases; correct: 2.
+2020-02-10 21:07:43,647 - log\train.log - INFO - evaluate:test
+2020-02-10 21:07:51,116 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 33113 phrases; correct: 1.
 
-2020-02-09 18:36:56,164 - log\train.log - INFO - accuracy:  13.63%; precision:   0.00%; recall:   0.04%; FB1:   0.01
+2020-02-10 21:07:51,116 - log\train.log - INFO - accuracy:  19.57%; precision:   0.00%; recall:   0.02%; FB1:   0.01
 
-2020-02-09 18:36:56,164 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  20256
+2020-02-10 21:07:51,116 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.02%; FB1:   0.01  11344
 
-2020-02-09 18:36:56,164 - log\train.log - INFO -              PARK: precision:   0.01%; recall:   2.00%; FB1:   0.02  18689
+2020-02-10 21:07:51,116 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  8386
 
-2020-02-09 18:36:56,164 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  15028
+2020-02-10 21:07:51,116 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  13383
 
-2020-02-09 18:36:56,226 - log\train.log - INFO - new best test f1 score:0.010
-2020-02-09 18:39:38,742 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:39:46,445 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 44206 phrases; correct: 3.
+2020-02-10 21:07:51,178 - log\train.log - INFO - new best test f1 score:0.010
+2020-02-10 21:10:33,897 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:10:41,475 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 53810 phrases; correct: 0.
 
-2020-02-09 18:39:46,445 - log\train.log - INFO - accuracy:  34.65%; precision:   0.01%; recall:   0.05%; FB1:   0.01
+2020-02-10 21:10:41,475 - log\train.log - INFO - accuracy:  31.12%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:39:46,445 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.02%; FB1:   0.01  27056
+2020-02-10 21:10:41,475 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  21948
 
-2020-02-09 18:39:46,445 - log\train.log - INFO -              PARK: precision:   0.02%; recall:   1.00%; FB1:   0.03  12319
+2020-02-10 21:10:41,475 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  10899
 
-2020-02-09 18:39:46,445 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  4831
+2020-02-10 21:10:41,475 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  20963
 
-2020-02-09 18:39:46,523 - log\train.log - INFO - new best dev f1 score:0.010
-2020-02-09 18:39:47,836 - log\train.log - INFO - model saved
-2020-02-09 18:39:47,836 - log\train.log - INFO - evaluate:test
-2020-02-09 18:39:55,351 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 43462 phrases; correct: 3.
+2020-02-10 21:10:41,475 - log\train.log - INFO - evaluate:test
+2020-02-10 21:10:48,897 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 52805 phrases; correct: 1.
 
-2020-02-09 18:39:55,351 - log\train.log - INFO - accuracy:  34.69%; precision:   0.01%; recall:   0.05%; FB1:   0.01
+2020-02-10 21:10:48,897 - log\train.log - INFO - accuracy:  32.14%; precision:   0.00%; recall:   0.02%; FB1:   0.00
 
-2020-02-09 18:39:55,351 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.02%; FB1:   0.01  26339
+2020-02-10 21:10:48,897 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.02%; FB1:   0.01  21530
 
-2020-02-09 18:39:55,351 - log\train.log - INFO -              PARK: precision:   0.02%; recall:   2.00%; FB1:   0.03  12222
+2020-02-10 21:10:48,897 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  10736
 
-2020-02-09 18:39:55,351 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  4901
+2020-02-10 21:10:48,897 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  20539
 
-2020-02-09 18:39:55,414 - log\train.log - INFO - new best test f1 score:0.010
-2020-02-09 18:42:46,584 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:42:54,271 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 37764 phrases; correct: 4.
+2020-02-10 21:13:41,772 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:13:49,350 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 60111 phrases; correct: 0.
 
-2020-02-09 18:42:54,271 - log\train.log - INFO - accuracy:  43.10%; precision:   0.01%; recall:   0.07%; FB1:   0.02
+2020-02-10 21:13:49,350 - log\train.log - INFO - accuracy:  39.69%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:42:54,271 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.04%; FB1:   0.01  29858
+2020-02-10 21:13:49,350 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  28231
 
-2020-02-09 18:42:54,271 - log\train.log - INFO -              PARK: precision:   0.03%; recall:   1.00%; FB1:   0.06  6177
+2020-02-10 21:13:49,350 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  8555
 
-2020-02-09 18:42:54,271 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1729
+2020-02-10 21:13:49,350 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  23325
 
-2020-02-09 18:42:54,349 - log\train.log - INFO - new best dev f1 score:0.020
-2020-02-09 18:42:55,053 - log\train.log - INFO - model saved
-2020-02-09 18:42:55,053 - log\train.log - INFO - evaluate:test
-2020-02-09 18:43:02,615 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 37117 phrases; correct: 4.
+2020-02-10 21:13:49,350 - log\train.log - INFO - evaluate:test
+2020-02-10 21:13:56,772 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 58827 phrases; correct: 0.
 
-2020-02-09 18:43:02,615 - log\train.log - INFO - accuracy:  43.52%; precision:   0.01%; recall:   0.07%; FB1:   0.02
+2020-02-10 21:13:56,772 - log\train.log - INFO - accuracy:  40.84%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:43:02,615 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.06%; FB1:   0.02  29268
+2020-02-10 21:13:56,788 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  27553
 
-2020-02-09 18:43:02,615 - log\train.log - INFO -              PARK: precision:   0.02%; recall:   1.00%; FB1:   0.03  6046
+2020-02-10 21:13:56,788 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  8535
 
-2020-02-09 18:43:02,615 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1803
+2020-02-10 21:13:56,788 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  22739
 
-2020-02-09 18:43:02,678 - log\train.log - INFO - new best test f1 score:0.020
-2020-02-09 18:46:08,646 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:46:16,318 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 31965 phrases; correct: 2.
+2020-02-10 21:17:05,178 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:17:12,757 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 58582 phrases; correct: 0.
 
-2020-02-09 18:46:16,318 - log\train.log - INFO - accuracy:  50.53%; precision:   0.01%; recall:   0.04%; FB1:   0.01
+2020-02-10 21:17:12,757 - log\train.log - INFO - accuracy:  47.22%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:46:16,318 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.04%; FB1:   0.01  29612
+2020-02-10 21:17:12,757 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  32169
 
-2020-02-09 18:46:16,318 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  1734
+2020-02-10 21:17:12,757 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  1844
 
-2020-02-09 18:46:16,318 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  619
+2020-02-10 21:17:12,757 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  24569
 
-2020-02-09 18:46:16,318 - log\train.log - INFO - evaluate:test
-2020-02-09 18:46:23,740 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 31360 phrases; correct: 5.
+2020-02-10 21:17:12,772 - log\train.log - INFO - evaluate:test
+2020-02-10 21:17:20,569 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 57377 phrases; correct: 1.
 
-2020-02-09 18:46:23,740 - log\train.log - INFO - accuracy:  51.11%; precision:   0.02%; recall:   0.09%; FB1:   0.03
+2020-02-10 21:17:20,569 - log\train.log - INFO - accuracy:  48.28%; precision:   0.00%; recall:   0.02%; FB1:   0.00
 
-2020-02-09 18:46:23,740 - log\train.log - INFO -            FOREST: precision:   0.02%; recall:   0.10%; FB1:   0.03  28970
+2020-02-10 21:17:20,569 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.02%; FB1:   0.01  31514
 
-2020-02-09 18:46:23,740 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  1714
+2020-02-10 21:17:20,569 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  1832
 
-2020-02-09 18:46:23,740 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  676
+2020-02-10 21:17:20,569 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  24031
 
-2020-02-09 18:46:23,834 - log\train.log - INFO - new best test f1 score:0.030
-2020-02-09 18:49:45,709 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:49:53,318 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 29474 phrases; correct: 2.
+2020-02-10 21:20:30,614 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:20:38,192 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 53428 phrases; correct: 0.
 
-2020-02-09 18:49:53,318 - log\train.log - INFO - accuracy:  53.51%; precision:   0.01%; recall:   0.04%; FB1:   0.01
+2020-02-10 21:20:38,192 - log\train.log - INFO - accuracy:  52.02%; precision:   0.00%; recall:   0.00%; FB1:   0.00
 
-2020-02-09 18:49:53,318 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.04%; FB1:   0.01  28965
+2020-02-10 21:20:38,192 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.00%; FB1:   0.00  32048
 
-2020-02-09 18:49:53,318 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  311
+2020-02-10 21:20:38,192 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  96
 
-2020-02-09 18:49:53,318 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  198
+2020-02-10 21:20:38,192 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  21284
 
-2020-02-09 18:49:53,334 - log\train.log - INFO - evaluate:test
-2020-02-09 18:50:00,787 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 28854 phrases; correct: 6.
+2020-02-10 21:20:38,208 - log\train.log - INFO - evaluate:test
+2020-02-10 21:20:45,676 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 52457 phrases; correct: 2.
 
-2020-02-09 18:50:00,787 - log\train.log - INFO - accuracy:  54.09%; precision:   0.02%; recall:   0.11%; FB1:   0.03
+2020-02-10 21:20:45,676 - log\train.log - INFO - accuracy:  53.06%; precision:   0.00%; recall:   0.04%; FB1:   0.01
 
-2020-02-09 18:50:00,787 - log\train.log - INFO -            FOREST: precision:   0.02%; recall:   0.12%; FB1:   0.04  28306
+2020-02-10 21:20:45,676 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.04%; FB1:   0.01  31425
 
-2020-02-09 18:50:00,787 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  345
+2020-02-10 21:20:45,676 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  87
 
-2020-02-09 18:50:00,787 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  203
+2020-02-10 21:20:45,676 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  20945
 
-2020-02-09 18:50:00,865 - log\train.log - INFO - new best test f1 score:0.030
-2020-02-09 18:53:26,861 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:53:34,486 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 27272 phrases; correct: 2.
+2020-02-10 21:20:45,786 - log\train.log - INFO - new best test f1 score:0.010
+2020-02-10 21:24:05,408 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:24:13,080 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 42732 phrases; correct: 1.
 
-2020-02-09 18:53:34,486 - log\train.log - INFO - accuracy:  56.53%; precision:   0.01%; recall:   0.04%; FB1:   0.01
+2020-02-10 21:24:13,080 - log\train.log - INFO - accuracy:  55.47%; precision:   0.00%; recall:   0.02%; FB1:   0.00
 
-2020-02-09 18:53:34,486 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.04%; FB1:   0.01  27210
+2020-02-10 21:24:13,080 - log\train.log - INFO -            FOREST: precision:   0.00%; recall:   0.02%; FB1:   0.01  30479
 
-2020-02-09 18:53:34,486 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  29
+2020-02-10 21:24:13,080 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 18:53:34,486 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  33
+2020-02-10 21:24:13,080 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  12253
 
-2020-02-09 18:53:34,486 - log\train.log - INFO - evaluate:test
-2020-02-09 18:53:41,908 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 26633 phrases; correct: 6.
+2020-02-10 21:24:13,095 - log\train.log - INFO - evaluate:test
+2020-02-10 21:24:20,517 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 41919 phrases; correct: 3.
 
-2020-02-09 18:53:41,908 - log\train.log - INFO - accuracy:  57.10%; precision:   0.02%; recall:   0.11%; FB1:   0.04
+2020-02-10 21:24:20,517 - log\train.log - INFO - accuracy:  56.46%; precision:   0.01%; recall:   0.05%; FB1:   0.01
 
-2020-02-09 18:53:41,908 - log\train.log - INFO -            FOREST: precision:   0.02%; recall:   0.12%; FB1:   0.04  26581
+2020-02-10 21:24:20,517 - log\train.log - INFO -            FOREST: precision:   0.01%; recall:   0.06%; FB1:   0.02  29776
 
-2020-02-09 18:53:41,908 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  31
+2020-02-10 21:24:20,517 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 18:53:41,908 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  21
+2020-02-10 21:24:20,517 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  12143
 
-2020-02-09 18:53:41,970 - log\train.log - INFO - new best test f1 score:0.040
-2020-02-09 18:57:23,330 - log\train.log - INFO - evaluate:dev
-2020-02-09 18:57:30,939 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 26037 phrases; correct: 10.
+2020-02-10 21:24:20,580 - log\train.log - INFO - new best test f1 score:0.010
+2020-02-10 21:27:39,642 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:27:47,220 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 30401 phrases; correct: 8.
 
-2020-02-09 18:57:30,939 - log\train.log - INFO - accuracy:  58.43%; precision:   0.04%; recall:   0.18%; FB1:   0.06
+2020-02-10 21:27:47,220 - log\train.log - INFO - accuracy:  57.72%; precision:   0.03%; recall:   0.14%; FB1:   0.04
 
-2020-02-09 18:57:30,939 - log\train.log - INFO -            FOREST: precision:   0.04%; recall:   0.21%; FB1:   0.06  26032
+2020-02-10 21:27:47,220 - log\train.log - INFO -            FOREST: precision:   0.03%; recall:   0.17%; FB1:   0.05  27242
 
-2020-02-09 18:57:30,939 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
+2020-02-10 21:27:47,220 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 18:57:30,939 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  4
+2020-02-10 21:27:47,220 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  3159
 
-2020-02-09 18:57:31,002 - log\train.log - INFO - new best dev f1 score:0.060
-2020-02-09 18:57:32,642 - log\train.log - INFO - model saved
-2020-02-09 18:57:32,642 - log\train.log - INFO - evaluate:test
-2020-02-09 18:57:40,095 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 25454 phrases; correct: 12.
+2020-02-10 21:27:47,299 - log\train.log - INFO - new best dev f1 score:0.040
+2020-02-10 21:27:48,283 - log\train.log - INFO - model saved
+2020-02-10 21:27:48,283 - log\train.log - INFO - evaluate:test
+2020-02-10 21:27:55,752 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 29702 phrases; correct: 8.
 
-2020-02-09 18:57:40,095 - log\train.log - INFO - accuracy:  58.99%; precision:   0.05%; recall:   0.22%; FB1:   0.08
+2020-02-10 21:27:55,752 - log\train.log - INFO - accuracy:  58.83%; precision:   0.03%; recall:   0.15%; FB1:   0.05
 
-2020-02-09 18:57:40,095 - log\train.log - INFO -            FOREST: precision:   0.05%; recall:   0.25%; FB1:   0.08  25449
+2020-02-10 21:27:55,752 - log\train.log - INFO -            FOREST: precision:   0.03%; recall:   0.17%; FB1:   0.05  26536
 
-2020-02-09 18:57:40,095 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  3
+2020-02-10 21:27:55,752 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 18:57:40,095 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
+2020-02-10 21:27:55,752 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  3166
 
-2020-02-09 18:57:40,173 - log\train.log - INFO - new best test f1 score:0.080
-2020-02-09 19:01:41,455 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:01:49,080 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 25256 phrases; correct: 23.
+2020-02-10 21:27:55,814 - log\train.log - INFO - new best test f1 score:0.050
+2020-02-10 21:31:20,955 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:31:28,611 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 22855 phrases; correct: 72.
 
-2020-02-09 19:01:49,080 - log\train.log - INFO - accuracy:  59.74%; precision:   0.09%; recall:   0.41%; FB1:   0.15
+2020-02-10 21:31:28,611 - log\train.log - INFO - accuracy:  62.40%; precision:   0.32%; recall:   1.29%; FB1:   0.51
 
-2020-02-09 19:01:49,080 - log\train.log - INFO -            FOREST: precision:   0.09%; recall:   0.48%; FB1:   0.15  25256
+2020-02-10 21:31:28,611 - log\train.log - INFO -            FOREST: precision:   0.32%; recall:   1.50%; FB1:   0.52  22717
 
-2020-02-09 19:01:49,080 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:31:28,611 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:01:49,080 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:31:28,611 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  138
 
-2020-02-09 19:01:49,158 - log\train.log - INFO - new best dev f1 score:0.150
-2020-02-09 19:01:50,752 - log\train.log - INFO - model saved
-2020-02-09 19:01:50,752 - log\train.log - INFO - evaluate:test
-2020-02-09 19:01:58,173 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 24671 phrases; correct: 31.
+2020-02-10 21:31:28,689 - log\train.log - INFO - new best dev f1 score:0.510
+2020-02-10 21:31:29,424 - log\train.log - INFO - model saved
+2020-02-10 21:31:29,424 - log\train.log - INFO - evaluate:test
+2020-02-10 21:31:36,924 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 22101 phrases; correct: 77.
 
-2020-02-09 19:01:58,173 - log\train.log - INFO - accuracy:  60.29%; precision:   0.13%; recall:   0.56%; FB1:   0.21
+2020-02-10 21:31:36,924 - log\train.log - INFO - accuracy:  63.80%; precision:   0.35%; recall:   1.40%; FB1:   0.56
 
-2020-02-09 19:01:58,173 - log\train.log - INFO -            FOREST: precision:   0.13%; recall:   0.65%; FB1:   0.21  24671
+2020-02-10 21:31:36,924 - log\train.log - INFO -            FOREST: precision:   0.35%; recall:   1.60%; FB1:   0.58  21938
 
-2020-02-09 19:01:58,173 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:31:36,924 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:01:58,173 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:31:36,924 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  163
 
-2020-02-09 19:01:58,236 - log\train.log - INFO - new best test f1 score:0.210
-2020-02-09 19:06:06,892 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:06:14,486 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 24219 phrases; correct: 55.
+2020-02-10 21:31:36,986 - log\train.log - INFO - new best test f1 score:0.560
+2020-02-10 21:35:42,468 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:35:50,078 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 18025 phrases; correct: 306.
 
-2020-02-09 19:06:14,486 - log\train.log - INFO - accuracy:  61.25%; precision:   0.23%; recall:   0.98%; FB1:   0.37
+2020-02-10 21:35:50,078 - log\train.log - INFO - accuracy:  67.53%; precision:   1.70%; recall:   5.46%; FB1:   2.59
 
-2020-02-09 19:06:14,486 - log\train.log - INFO -            FOREST: precision:   0.23%; recall:   1.15%; FB1:   0.38  24219
+2020-02-10 21:35:50,078 - log\train.log - INFO -            FOREST: precision:   1.70%; recall:   6.38%; FB1:   2.68  18024
 
-2020-02-09 19:06:14,486 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:35:50,078 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:06:14,486 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:35:50,078 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
 
-2020-02-09 19:06:14,548 - log\train.log - INFO - new best dev f1 score:0.370
-2020-02-09 19:06:15,267 - log\train.log - INFO - model saved
-2020-02-09 19:06:15,267 - log\train.log - INFO - evaluate:test
-2020-02-09 19:06:22,705 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 23628 phrases; correct: 54.
+2020-02-10 21:35:50,140 - log\train.log - INFO - new best dev f1 score:2.590
+2020-02-10 21:35:50,797 - log\train.log - INFO - model saved
+2020-02-10 21:35:50,797 - log\train.log - INFO - evaluate:test
+2020-02-10 21:35:58,250 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 17397 phrases; correct: 326.
 
-2020-02-09 19:06:22,705 - log\train.log - INFO - accuracy:  61.83%; precision:   0.23%; recall:   0.98%; FB1:   0.37
+2020-02-10 21:35:58,250 - log\train.log - INFO - accuracy:  68.87%; precision:   1.87%; recall:   5.93%; FB1:   2.85
 
-2020-02-09 19:06:22,705 - log\train.log - INFO -            FOREST: precision:   0.23%; recall:   1.12%; FB1:   0.38  23628
+2020-02-10 21:35:58,250 - log\train.log - INFO -            FOREST: precision:   1.87%; recall:   6.79%; FB1:   2.94  17397
 
-2020-02-09 19:06:22,705 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:35:58,250 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:06:22,705 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:35:58,250 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:06:22,767 - log\train.log - INFO - new best test f1 score:0.370
-2020-02-09 19:10:56,377 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:11:04,064 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 21882 phrases; correct: 149.
+2020-02-10 21:35:58,312 - log\train.log - INFO - new best test f1 score:2.850
+2020-02-10 21:40:18,416 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:40:26,104 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 13406 phrases; correct: 795.
 
-2020-02-09 19:11:04,064 - log\train.log - INFO - accuracy:  64.11%; precision:   0.68%; recall:   2.66%; FB1:   1.08
+2020-02-10 21:40:26,104 - log\train.log - INFO - accuracy:  71.90%; precision:   5.93%; recall:  14.20%; FB1:   8.37
 
-2020-02-09 19:11:04,064 - log\train.log - INFO -            FOREST: precision:   0.68%; recall:   3.10%; FB1:   1.12  21882
+2020-02-10 21:40:26,104 - log\train.log - INFO -            FOREST: precision:   5.93%; recall:  16.56%; FB1:   8.73  13405
 
-2020-02-09 19:11:04,064 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:40:26,104 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:11:04,064 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:40:26,104 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
 
-2020-02-09 19:11:04,127 - log\train.log - INFO - new best dev f1 score:1.080
-2020-02-09 19:11:05,674 - log\train.log - INFO - model saved
-2020-02-09 19:11:05,674 - log\train.log - INFO - evaluate:test
-2020-02-09 19:11:13,158 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 21258 phrases; correct: 148.
+2020-02-10 21:40:26,182 - log\train.log - INFO - new best dev f1 score:8.370
+2020-02-10 21:40:27,760 - log\train.log - INFO - model saved
+2020-02-10 21:40:27,760 - log\train.log - INFO - evaluate:test
+2020-02-10 21:40:35,198 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 12980 phrases; correct: 811.
 
-2020-02-09 19:11:13,158 - log\train.log - INFO - accuracy:  64.89%; precision:   0.70%; recall:   2.69%; FB1:   1.11
+2020-02-10 21:40:35,198 - log\train.log - INFO - accuracy:  73.27%; precision:   6.25%; recall:  14.75%; FB1:   8.78
 
-2020-02-09 19:11:13,158 - log\train.log - INFO -            FOREST: precision:   0.70%; recall:   3.08%; FB1:   1.14  21258
+2020-02-10 21:40:35,198 - log\train.log - INFO -            FOREST: precision:   6.25%; recall:  16.90%; FB1:   9.12  12980
 
-2020-02-09 19:11:13,158 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:40:35,198 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:11:13,158 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:40:35,198 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:11:13,220 - log\train.log - INFO - new best test f1 score:1.110
-2020-02-09 19:15:24,689 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:15:32,377 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 17483 phrases; correct: 567.
+2020-02-10 21:40:35,260 - log\train.log - INFO - new best test f1 score:8.780
+2020-02-10 21:45:10,026 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:45:17,604 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 10204 phrases; correct: 1311.
 
-2020-02-09 19:15:32,377 - log\train.log - INFO - accuracy:  69.06%; precision:   3.24%; recall:  10.12%; FB1:   4.91
+2020-02-10 21:45:17,604 - log\train.log - INFO - accuracy:  74.31%; precision:  12.85%; recall:  23.41%; FB1:  16.59
 
-2020-02-09 19:15:32,377 - log\train.log - INFO -            FOREST: precision:   3.24%; recall:  11.81%; FB1:   5.09  17483
+2020-02-10 21:45:17,604 - log\train.log - INFO -            FOREST: precision:  12.85%; recall:  27.31%; FB1:  17.48  10204
 
-2020-02-09 19:15:32,377 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:45:17,604 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:15:32,377 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:45:17,604 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:15:32,455 - log\train.log - INFO - new best dev f1 score:4.910
-2020-02-09 19:15:33,361 - log\train.log - INFO - model saved
-2020-02-09 19:15:33,361 - log\train.log - INFO - evaluate:test
-2020-02-09 19:15:40,861 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 16958 phrases; correct: 513.
+2020-02-10 21:45:17,698 - log\train.log - INFO - new best dev f1 score:16.590
+2020-02-10 21:45:19,323 - log\train.log - INFO - model saved
+2020-02-10 21:45:19,323 - log\train.log - INFO - evaluate:test
+2020-02-10 21:45:26,807 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 9824 phrases; correct: 1322.
 
-2020-02-09 19:15:40,861 - log\train.log - INFO - accuracy:  70.05%; precision:   3.03%; recall:   9.33%; FB1:   4.57
+2020-02-10 21:45:26,807 - log\train.log - INFO - accuracy:  75.94%; precision:  13.46%; recall:  24.04%; FB1:  17.25
 
-2020-02-09 19:15:40,861 - log\train.log - INFO -            FOREST: precision:   3.03%; recall:  10.69%; FB1:   4.72  16958
+2020-02-10 21:45:26,807 - log\train.log - INFO -            FOREST: precision:  13.46%; recall:  27.54%; FB1:  18.08  9824
 
-2020-02-09 19:15:40,861 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:45:26,807 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:15:40,861 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:45:26,807 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:15:40,923 - log\train.log - INFO - new best test f1 score:4.570
-2020-02-09 19:20:40,845 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:20:48,423 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 11817 phrases; correct: 1482.
+2020-02-10 21:45:26,885 - log\train.log - INFO - new best test f1 score:17.250
+2020-02-10 21:49:47,211 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:49:54,774 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8424 phrases; correct: 1669.
 
-2020-02-09 19:20:48,423 - log\train.log - INFO - accuracy:  74.25%; precision:  12.54%; recall:  26.46%; FB1:  17.02
+2020-02-10 21:49:54,774 - log\train.log - INFO - accuracy:  75.71%; precision:  19.81%; recall:  29.80%; FB1:  23.80
 
-2020-02-09 19:20:48,423 - log\train.log - INFO -            FOREST: precision:  12.54%; recall:  30.88%; FB1:  17.84  11817
+2020-02-10 21:49:54,789 - log\train.log - INFO -            FOREST: precision:  19.81%; recall:  34.77%; FB1:  25.24  8424
 
-2020-02-09 19:20:48,423 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:49:54,789 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:20:48,423 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:49:54,789 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:20:48,486 - log\train.log - INFO - new best dev f1 score:17.020
-2020-02-09 19:20:49,205 - log\train.log - INFO - model saved
-2020-02-09 19:20:49,205 - log\train.log - INFO - evaluate:test
-2020-02-09 19:20:56,689 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 11495 phrases; correct: 1473.
+2020-02-10 21:49:54,852 - log\train.log - INFO - new best dev f1 score:23.800
+2020-02-10 21:49:56,508 - log\train.log - INFO - model saved
+2020-02-10 21:49:56,508 - log\train.log - INFO - evaluate:test
+2020-02-10 21:50:03,899 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8024 phrases; correct: 1705.
 
-2020-02-09 19:20:56,689 - log\train.log - INFO - accuracy:  75.50%; precision:  12.81%; recall:  26.78%; FB1:  17.33
+2020-02-10 21:50:03,899 - log\train.log - INFO - accuracy:  77.37%; precision:  21.25%; recall:  31.00%; FB1:  25.21
 
-2020-02-09 19:20:56,689 - log\train.log - INFO -            FOREST: precision:  12.81%; recall:  30.69%; FB1:  18.08  11495
+2020-02-10 21:50:03,899 - log\train.log - INFO -            FOREST: precision:  21.25%; recall:  35.52%; FB1:  26.59  8024
 
-2020-02-09 19:20:56,689 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:50:03,899 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:20:56,689 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:50:03,899 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:20:56,752 - log\train.log - INFO - new best test f1 score:17.330
-2020-02-09 19:26:04,104 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:26:11,823 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8016 phrases; correct: 1726.
+2020-02-10 21:50:03,977 - log\train.log - INFO - new best test f1 score:25.210
+2020-02-10 21:54:46,204 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:54:53,767 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7670 phrases; correct: 2210.
 
-2020-02-09 19:26:11,823 - log\train.log - INFO - accuracy:  75.46%; precision:  21.53%; recall:  30.82%; FB1:  25.35
+2020-02-10 21:54:53,767 - log\train.log - INFO - accuracy:  76.90%; precision:  28.81%; recall:  39.46%; FB1:  33.31
 
-2020-02-09 19:26:11,823 - log\train.log - INFO -            FOREST: precision:  21.53%; recall:  35.96%; FB1:  26.94  8016
+2020-02-10 21:54:53,767 - log\train.log - INFO -            FOREST: precision:  28.81%; recall:  46.04%; FB1:  35.45  7670
 
-2020-02-09 19:26:11,823 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:54:53,767 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:26:11,823 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:54:53,767 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:26:11,885 - log\train.log - INFO - new best dev f1 score:25.350
-2020-02-09 19:26:13,323 - log\train.log - INFO - model saved
-2020-02-09 19:26:13,323 - log\train.log - INFO - evaluate:test
-2020-02-09 19:26:20,823 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7742 phrases; correct: 1741.
+2020-02-10 21:54:53,845 - log\train.log - INFO - new best dev f1 score:33.310
+2020-02-10 21:54:54,563 - log\train.log - INFO - model saved
+2020-02-10 21:54:54,563 - log\train.log - INFO - evaluate:test
+2020-02-10 21:55:01,985 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7284 phrases; correct: 2272.
 
-2020-02-09 19:26:20,823 - log\train.log - INFO - accuracy:  76.93%; precision:  22.49%; recall:  31.65%; FB1:  26.30
+2020-02-10 21:55:01,985 - log\train.log - INFO - accuracy:  78.56%; precision:  31.19%; recall:  41.31%; FB1:  35.54
 
-2020-02-09 19:26:20,823 - log\train.log - INFO -            FOREST: precision:  22.49%; recall:  36.27%; FB1:  27.76  7742
+2020-02-10 21:55:01,985 - log\train.log - INFO -            FOREST: precision:  31.19%; recall:  47.33%; FB1:  37.60  7284
 
-2020-02-09 19:26:20,823 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:55:01,985 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:26:20,823 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:55:02,001 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:26:20,885 - log\train.log - INFO - new best test f1 score:26.300
-2020-02-09 19:31:24,901 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:31:32,588 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6703 phrases; correct: 2057.
+2020-02-10 21:55:02,063 - log\train.log - INFO - new best test f1 score:35.540
+2020-02-10 21:59:42,767 - log\train.log - INFO - evaluate:dev
+2020-02-10 21:59:50,329 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7321 phrases; correct: 3065.
 
-2020-02-09 19:31:32,588 - log\train.log - INFO - accuracy:  75.76%; precision:  30.69%; recall:  36.73%; FB1:  33.44
+2020-02-10 21:59:50,329 - log\train.log - INFO - accuracy:  78.31%; precision:  41.87%; recall:  54.73%; FB1:  47.44
 
-2020-02-09 19:31:32,588 - log\train.log - INFO -            FOREST: precision:  30.69%; recall:  42.85%; FB1:  35.76  6703
+2020-02-10 21:59:50,329 - log\train.log - INFO -            FOREST: precision:  41.87%; recall:  63.85%; FB1:  50.57  7321
 
-2020-02-09 19:31:32,588 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:59:50,329 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:31:32,588 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:59:50,329 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:31:32,667 - log\train.log - INFO - new best dev f1 score:33.440
-2020-02-09 19:31:34,370 - log\train.log - INFO - model saved
-2020-02-09 19:31:34,370 - log\train.log - INFO - evaluate:test
-2020-02-09 19:31:41,823 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6494 phrases; correct: 2075.
+2020-02-10 21:59:50,407 - log\train.log - INFO - new best dev f1 score:47.440
+2020-02-10 21:59:51,970 - log\train.log - INFO - model saved
+2020-02-10 21:59:51,970 - log\train.log - INFO - evaluate:test
+2020-02-10 21:59:59,563 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6971 phrases; correct: 3101.
 
-2020-02-09 19:31:41,823 - log\train.log - INFO - accuracy:  77.43%; precision:  31.95%; recall:  37.73%; FB1:  34.60
+2020-02-10 21:59:59,563 - log\train.log - INFO - accuracy:  79.98%; precision:  44.48%; recall:  56.38%; FB1:  49.73
 
-2020-02-09 19:31:41,823 - log\train.log - INFO -            FOREST: precision:  31.95%; recall:  43.23%; FB1:  36.75  6494
+2020-02-10 21:59:59,563 - log\train.log - INFO -            FOREST: precision:  44.48%; recall:  64.60%; FB1:  52.69  6971
 
-2020-02-09 19:31:41,823 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:59:59,563 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:31:41,823 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 21:59:59,563 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:31:41,885 - log\train.log - INFO - new best test f1 score:34.600
-2020-02-09 19:37:05,432 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:37:13,135 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5961 phrases; correct: 2187.
+2020-02-10 21:59:59,657 - log\train.log - INFO - new best test f1 score:49.730
+2020-02-10 22:04:47,548 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:04:55,110 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7237 phrases; correct: 3723.
 
-2020-02-09 19:37:13,135 - log\train.log - INFO - accuracy:  75.35%; precision:  36.69%; recall:  39.05%; FB1:  37.83
+2020-02-10 22:04:55,110 - log\train.log - INFO - accuracy:  79.40%; precision:  51.44%; recall:  66.48%; FB1:  58.00
 
-2020-02-09 19:37:13,135 - log\train.log - INFO -            FOREST: precision:  36.69%; recall:  45.56%; FB1:  40.65  5961
+2020-02-10 22:04:55,110 - log\train.log - INFO -            FOREST: precision:  51.44%; recall:  77.56%; FB1:  61.86  7237
 
-2020-02-09 19:37:13,135 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:04:55,110 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:37:13,135 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:04:55,110 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:37:13,245 - log\train.log - INFO - new best dev f1 score:37.830
-2020-02-09 19:37:15,167 - log\train.log - INFO - model saved
-2020-02-09 19:37:15,167 - log\train.log - INFO - evaluate:test
-2020-02-09 19:37:22,651 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5815 phrases; correct: 2202.
+2020-02-10 22:04:55,188 - log\train.log - INFO - new best dev f1 score:58.000
+2020-02-10 22:04:56,782 - log\train.log - INFO - model saved
+2020-02-10 22:04:56,782 - log\train.log - INFO - evaluate:test
+2020-02-10 22:05:04,204 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6870 phrases; correct: 3773.
 
-2020-02-09 19:37:22,651 - log\train.log - INFO - accuracy:  77.12%; precision:  37.87%; recall:  40.04%; FB1:  38.92
+2020-02-10 22:05:04,204 - log\train.log - INFO - accuracy:  81.04%; precision:  54.92%; recall:  68.60%; FB1:  61.00
 
-2020-02-09 19:37:22,651 - log\train.log - INFO -            FOREST: precision:  37.87%; recall:  45.88%; FB1:  41.49  5815
+2020-02-10 22:05:04,204 - log\train.log - INFO -            FOREST: precision:  54.92%; recall:  78.60%; FB1:  64.66  6870
 
-2020-02-09 19:37:22,651 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:05:04,204 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:37:22,651 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:05:04,204 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:37:22,713 - log\train.log - INFO - new best test f1 score:38.920
-2020-02-09 19:43:06,708 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:43:15,224 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5862 phrases; correct: 2241.
+2020-02-10 22:05:04,267 - log\train.log - INFO - new best test f1 score:61.000
+2020-02-10 22:10:02,921 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:10:10,499 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7264 phrases; correct: 4013.
 
-2020-02-09 19:43:15,224 - log\train.log - INFO - accuracy:  75.42%; precision:  38.23%; recall:  40.02%; FB1:  39.10
+2020-02-10 22:10:10,499 - log\train.log - INFO - accuracy:  79.85%; precision:  55.25%; recall:  71.66%; FB1:  62.39
 
-2020-02-09 19:43:15,224 - log\train.log - INFO -            FOREST: precision:  38.23%; recall:  46.69%; FB1:  42.04  5862
+2020-02-10 22:10:10,499 - log\train.log - INFO -            FOREST: precision:  55.25%; recall:  83.60%; FB1:  66.53  7264
 
-2020-02-09 19:43:15,224 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:10:10,499 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:43:15,224 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:10:10,499 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:43:15,333 - log\train.log - INFO - new best dev f1 score:39.100
-2020-02-09 19:43:16,052 - log\train.log - INFO - model saved
-2020-02-09 19:43:16,052 - log\train.log - INFO - evaluate:test
-2020-02-09 19:43:23,771 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5713 phrases; correct: 2250.
+2020-02-10 22:10:10,577 - log\train.log - INFO - new best dev f1 score:62.390
+2020-02-10 22:10:12,140 - log\train.log - INFO - model saved
+2020-02-10 22:10:12,140 - log\train.log - INFO - evaluate:test
+2020-02-10 22:10:19,608 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6897 phrases; correct: 4032.
 
-2020-02-09 19:43:23,771 - log\train.log - INFO - accuracy:  77.17%; precision:  39.38%; recall:  40.91%; FB1:  40.13
+2020-02-10 22:10:19,608 - log\train.log - INFO - accuracy:  81.46%; precision:  58.46%; recall:  73.31%; FB1:  65.05
 
-2020-02-09 19:43:23,771 - log\train.log - INFO -            FOREST: precision:  39.38%; recall:  46.88%; FB1:  42.80  5713
+2020-02-10 22:10:19,608 - log\train.log - INFO -            FOREST: precision:  58.46%; recall:  84.00%; FB1:  68.94  6897
 
-2020-02-09 19:43:23,771 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:10:19,608 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:43:23,771 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:10:19,608 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:43:23,849 - log\train.log - INFO - new best test f1 score:40.130
-2020-02-09 19:49:03,296 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:49:11,499 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5961 phrases; correct: 2357.
+2020-02-10 22:10:19,687 - log\train.log - INFO - new best test f1 score:65.050
+2020-02-10 22:15:28,358 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:15:35,968 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7284 phrases; correct: 4063.
 
-2020-02-09 19:49:11,499 - log\train.log - INFO - accuracy:  75.91%; precision:  39.54%; recall:  42.09%; FB1:  40.78
+2020-02-10 22:15:35,968 - log\train.log - INFO - accuracy:  79.96%; precision:  55.78%; recall:  72.55%; FB1:  63.07
 
-2020-02-09 19:49:11,499 - log\train.log - INFO -            FOREST: precision:  39.54%; recall:  49.10%; FB1:  43.81  5961
+2020-02-10 22:15:35,968 - log\train.log - INFO -            FOREST: precision:  55.78%; recall:  84.65%; FB1:  67.25  7284
 
-2020-02-09 19:49:11,499 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:15:35,968 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:49:11,499 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:15:35,968 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:49:12,093 - log\train.log - INFO - new best dev f1 score:40.780
-2020-02-09 19:49:12,983 - log\train.log - INFO - model saved
-2020-02-09 19:49:12,983 - log\train.log - INFO - evaluate:test
-2020-02-09 19:49:20,811 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5800 phrases; correct: 2408.
+2020-02-10 22:15:36,046 - log\train.log - INFO - new best dev f1 score:63.070
+2020-02-10 22:15:37,718 - log\train.log - INFO - model saved
+2020-02-10 22:15:37,718 - log\train.log - INFO - evaluate:test
+2020-02-10 22:15:45,108 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6934 phrases; correct: 4054.
 
-2020-02-09 19:49:20,811 - log\train.log - INFO - accuracy:  77.67%; precision:  41.52%; recall:  43.78%; FB1:  42.62
+2020-02-10 22:15:45,108 - log\train.log - INFO - accuracy:  81.56%; precision:  58.47%; recall:  73.71%; FB1:  65.21
 
-2020-02-09 19:49:20,811 - log\train.log - INFO -            FOREST: precision:  41.52%; recall:  50.17%; FB1:  45.43  5800
+2020-02-10 22:15:45,108 - log\train.log - INFO -            FOREST: precision:  58.47%; recall:  84.46%; FB1:  69.10  6934
 
-2020-02-09 19:49:20,811 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:15:45,108 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:49:20,811 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:15:45,108 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:49:20,890 - log\train.log - INFO - new best test f1 score:42.620
-2020-02-09 19:54:59,521 - log\train.log - INFO - evaluate:dev
-2020-02-09 19:55:07,786 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6398 phrases; correct: 3369.
+2020-02-10 22:15:45,171 - log\train.log - INFO - new best test f1 score:65.210
+2020-02-10 22:20:52,983 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:21:00,546 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7254 phrases; correct: 4023.
 
-2020-02-09 19:55:07,786 - log\train.log - INFO - accuracy:  78.60%; precision:  52.66%; recall:  60.16%; FB1:  56.16
+2020-02-10 22:21:00,546 - log\train.log - INFO - accuracy:  80.03%; precision:  55.46%; recall:  71.84%; FB1:  62.60
 
-2020-02-09 19:55:07,786 - log\train.log - INFO -            FOREST: precision:  52.66%; recall:  70.19%; FB1:  60.17  6398
+2020-02-10 22:21:00,546 - log\train.log - INFO -            FOREST: precision:  55.46%; recall:  83.81%; FB1:  66.75  7254
 
-2020-02-09 19:55:07,786 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:21:00,546 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:55:07,786 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:21:00,546 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:55:08,271 - log\train.log - INFO - new best dev f1 score:56.160
-2020-02-09 19:55:09,489 - log\train.log - INFO - model saved
-2020-02-09 19:55:09,489 - log\train.log - INFO - evaluate:test
-2020-02-09 19:55:17,239 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6206 phrases; correct: 3427.
+2020-02-10 22:21:00,546 - log\train.log - INFO - evaluate:test
+2020-02-10 22:21:07,952 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6889 phrases; correct: 4047.
 
-2020-02-09 19:55:17,239 - log\train.log - INFO - accuracy:  80.32%; precision:  55.22%; recall:  62.31%; FB1:  58.55
+2020-02-10 22:21:07,952 - log\train.log - INFO - accuracy:  81.61%; precision:  58.75%; recall:  73.58%; FB1:  65.33
 
-2020-02-09 19:55:17,239 - log\train.log - INFO -            FOREST: precision:  55.22%; recall:  71.40%; FB1:  62.28  6206
+2020-02-10 22:21:07,952 - log\train.log - INFO -            FOREST: precision:  58.75%; recall:  84.31%; FB1:  69.24  6889
 
-2020-02-09 19:55:17,239 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:21:07,952 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:55:17,239 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:21:07,952 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 19:55:17,318 - log\train.log - INFO - new best test f1 score:58.550
-2020-02-09 20:00:42,847 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:00:50,519 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6687 phrases; correct: 4169.
+2020-02-10 22:21:08,030 - log\train.log - INFO - new best test f1 score:65.330
+2020-02-10 22:26:23,978 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:26:31,556 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7159 phrases; correct: 4051.
 
-2020-02-09 20:00:50,519 - log\train.log - INFO - accuracy:  80.53%; precision:  62.34%; recall:  74.45%; FB1:  67.86
+2020-02-10 22:26:31,556 - log\train.log - INFO - accuracy:  80.20%; precision:  56.59%; recall:  72.34%; FB1:  63.50
 
-2020-02-09 20:00:50,519 - log\train.log - INFO -            FOREST: precision:  62.34%; recall:  86.85%; FB1:  72.59  6687
+2020-02-10 22:26:31,556 - log\train.log - INFO -            FOREST: precision:  56.59%; recall:  84.40%; FB1:  67.75  7159
 
-2020-02-09 20:00:50,519 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:26:31,556 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:00:50,519 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:26:31,556 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:00:50,597 - log\train.log - INFO - new best dev f1 score:67.860
-2020-02-09 20:00:51,738 - log\train.log - INFO - model saved
-2020-02-09 20:00:51,738 - log\train.log - INFO - evaluate:test
-2020-02-09 20:00:59,300 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6432 phrases; correct: 4138.
+2020-02-10 22:26:31,634 - log\train.log - INFO - new best dev f1 score:63.500
+2020-02-10 22:26:32,322 - log\train.log - INFO - model saved
+2020-02-10 22:26:32,322 - log\train.log - INFO - evaluate:test
+2020-02-10 22:26:39,728 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6795 phrases; correct: 4072.
 
-2020-02-09 20:00:59,300 - log\train.log - INFO - accuracy:  82.10%; precision:  64.33%; recall:  75.24%; FB1:  69.36
+2020-02-10 22:26:39,728 - log\train.log - INFO - accuracy:  81.74%; precision:  59.93%; recall:  74.04%; FB1:  66.24
 
-2020-02-09 20:00:59,300 - log\train.log - INFO -            FOREST: precision:  64.33%; recall:  86.21%; FB1:  73.68  6432
+2020-02-10 22:26:39,728 - log\train.log - INFO -            FOREST: precision:  59.93%; recall:  84.83%; FB1:  70.24  6795
 
-2020-02-09 20:00:59,300 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:26:39,728 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:00:59,300 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:26:39,728 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:00:59,363 - log\train.log - INFO - new best test f1 score:69.360
-2020-02-09 20:06:37,644 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:06:45,472 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6885 phrases; correct: 3939.
+2020-02-10 22:26:39,806 - log\train.log - INFO - new best test f1 score:66.240
+2020-02-10 22:32:11,603 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:32:19,197 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7029 phrases; correct: 4125.
 
-2020-02-09 20:06:45,472 - log\train.log - INFO - accuracy:  80.53%; precision:  57.21%; recall:  70.34%; FB1:  63.10
+2020-02-10 22:32:19,197 - log\train.log - INFO - accuracy:  80.34%; precision:  58.69%; recall:  73.66%; FB1:  65.33
 
-2020-02-09 20:06:45,472 - log\train.log - INFO -            FOREST: precision:  57.21%; recall:  82.06%; FB1:  67.42  6885
+2020-02-10 22:32:19,197 - log\train.log - INFO -            FOREST: precision:  58.69%; recall:  85.94%; FB1:  69.75  7028
 
-2020-02-09 20:06:45,472 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:32:19,197 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:06:45,472 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:32:19,197 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
 
-2020-02-09 20:06:45,472 - log\train.log - INFO - evaluate:test
-2020-02-09 20:06:53,019 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6602 phrases; correct: 3937.
+2020-02-10 22:32:19,275 - log\train.log - INFO - new best dev f1 score:65.330
+2020-02-10 22:32:19,994 - log\train.log - INFO - model saved
+2020-02-10 22:32:19,994 - log\train.log - INFO - evaluate:test
+2020-02-10 22:32:27,400 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6666 phrases; correct: 4142.
 
-2020-02-09 20:06:53,019 - log\train.log - INFO - accuracy:  82.08%; precision:  59.63%; recall:  71.58%; FB1:  65.06
+2020-02-10 22:32:27,400 - log\train.log - INFO - accuracy:  81.88%; precision:  62.14%; recall:  75.31%; FB1:  68.09
 
-2020-02-09 20:06:53,019 - log\train.log - INFO -            FOREST: precision:  59.63%; recall:  82.02%; FB1:  69.06  6602
+2020-02-10 22:32:27,400 - log\train.log - INFO -            FOREST: precision:  62.14%; recall:  86.29%; FB1:  72.25  6666
 
-2020-02-09 20:06:53,019 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:32:27,400 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:06:53,019 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:32:27,400 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:15:07,304 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:15:15,101 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7064 phrases; correct: 3622.
+2020-02-10 22:32:27,478 - log\train.log - INFO - new best test f1 score:68.090
+2020-02-10 22:37:47,853 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:37:55,494 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6847 phrases; correct: 4230.
 
-2020-02-09 20:15:15,101 - log\train.log - INFO - accuracy:  80.52%; precision:  51.27%; recall:  64.68%; FB1:  57.20
+2020-02-10 22:37:55,494 - log\train.log - INFO - accuracy:  80.44%; precision:  61.78%; recall:  75.54%; FB1:  67.97
 
-2020-02-09 20:15:15,101 - log\train.log - INFO -            FOREST: precision:  51.27%; recall:  75.46%; FB1:  61.06  7064
+2020-02-10 22:37:55,494 - log\train.log - INFO -            FOREST: precision:  61.79%; recall:  88.12%; FB1:  72.64  6846
 
-2020-02-09 20:15:15,101 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:37:55,494 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:15:15,101 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:37:55,494 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1
 
-2020-02-09 20:15:15,101 - log\train.log - INFO - evaluate:test
-2020-02-09 20:15:22,554 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6732 phrases; correct: 3613.
+2020-02-10 22:37:55,572 - log\train.log - INFO - new best dev f1 score:67.970
+2020-02-10 22:37:56,291 - log\train.log - INFO - model saved
+2020-02-10 22:37:56,291 - log\train.log - INFO - evaluate:test
+2020-02-10 22:38:03,842 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6509 phrases; correct: 4256.
 
-2020-02-09 20:15:22,554 - log\train.log - INFO - accuracy:  81.96%; precision:  53.67%; recall:  65.69%; FB1:  59.07
+2020-02-10 22:38:03,842 - log\train.log - INFO - accuracy:  82.02%; precision:  65.39%; recall:  77.38%; FB1:  70.88
 
-2020-02-09 20:15:22,554 - log\train.log - INFO -            FOREST: precision:  53.67%; recall:  75.27%; FB1:  62.66  6732
+2020-02-10 22:38:03,842 - log\train.log - INFO -            FOREST: precision:  65.41%; recall:  88.67%; FB1:  75.28  6507
 
-2020-02-09 20:15:22,554 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:38:03,842 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:15:22,554 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:38:03,842 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  2
 
-2020-02-09 20:23:51,445 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:23:59,529 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7141 phrases; correct: 3367.
+2020-02-10 22:38:03,905 - log\train.log - INFO - new best test f1 score:70.880
+2020-02-10 22:46:03,960 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:46:11,647 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6684 phrases; correct: 4334.
 
-2020-02-09 20:23:59,529 - log\train.log - INFO - accuracy:  80.42%; precision:  47.15%; recall:  60.12%; FB1:  52.85
+2020-02-10 22:46:11,647 - log\train.log - INFO - accuracy:  80.57%; precision:  64.84%; recall:  77.39%; FB1:  70.56
 
-2020-02-09 20:23:59,529 - log\train.log - INFO -            FOREST: precision:  47.15%; recall:  70.15%; FB1:  56.39  7141
+2020-02-10 22:46:11,647 - log\train.log - INFO -            FOREST: precision:  65.02%; recall:  90.29%; FB1:  75.60  6666
 
-2020-02-09 20:23:59,529 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:46:11,647 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:23:59,529 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:46:11,647 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  18
 
-2020-02-09 20:23:59,544 - log\train.log - INFO - evaluate:test
-2020-02-09 20:24:07,279 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6809 phrases; correct: 3347.
+2020-02-10 22:46:11,757 - log\train.log - INFO - new best dev f1 score:70.560
+2020-02-10 22:46:13,319 - log\train.log - INFO - model saved
+2020-02-10 22:46:13,319 - log\train.log - INFO - evaluate:test
+2020-02-10 22:46:20,772 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6390 phrases; correct: 4338.
 
-2020-02-09 20:24:07,279 - log\train.log - INFO - accuracy:  81.80%; precision:  49.16%; recall:  60.85%; FB1:  54.38
+2020-02-10 22:46:20,772 - log\train.log - INFO - accuracy:  82.15%; precision:  67.89%; recall:  78.87%; FB1:  72.97
 
-2020-02-09 20:24:07,279 - log\train.log - INFO -            FOREST: precision:  49.16%; recall:  69.73%; FB1:  57.66  6809
+2020-02-10 22:46:20,772 - log\train.log - INFO -            FOREST: precision:  68.13%; recall:  90.38%; FB1:  77.69  6367
 
-2020-02-09 20:24:07,279 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:46:20,772 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:24:07,279 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:46:20,772 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  23
 
-2020-02-09 20:32:29,386 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:32:37,589 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7157 phrases; correct: 3260.
+2020-02-10 22:46:20,835 - log\train.log - INFO - new best test f1 score:72.970
+2020-02-10 22:54:25,661 - log\train.log - INFO - evaluate:dev
+2020-02-10 22:54:33,239 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6604 phrases; correct: 4410.
 
-2020-02-09 20:32:37,589 - log\train.log - INFO - accuracy:  80.46%; precision:  45.55%; recall:  58.21%; FB1:  51.11
+2020-02-10 22:54:33,239 - log\train.log - INFO - accuracy:  81.04%; precision:  66.78%; recall:  78.75%; FB1:  72.27
 
-2020-02-09 20:32:37,589 - log\train.log - INFO -            FOREST: precision:  45.70%; recall:  67.92%; FB1:  54.63  7134
+2020-02-10 22:54:33,239 - log\train.log - INFO -            FOREST: precision:  67.30%; recall:  91.88%; FB1:  77.69  6553
 
-2020-02-09 20:32:37,589 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:54:33,239 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:32:37,589 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  23
+2020-02-10 22:54:33,239 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  51
 
-2020-02-09 20:32:37,589 - log\train.log - INFO - evaluate:test
-2020-02-09 20:32:45,120 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6783 phrases; correct: 3253.
+2020-02-10 22:54:33,333 - log\train.log - INFO - new best dev f1 score:72.270
+2020-02-10 22:54:34,021 - log\train.log - INFO - model saved
+2020-02-10 22:54:34,021 - log\train.log - INFO - evaluate:test
+2020-02-10 22:54:41,458 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6299 phrases; correct: 4412.
 
-2020-02-09 20:32:45,120 - log\train.log - INFO - accuracy:  81.86%; precision:  47.96%; recall:  59.15%; FB1:  52.97
+2020-02-10 22:54:41,458 - log\train.log - INFO - accuracy:  82.60%; precision:  70.04%; recall:  80.22%; FB1:  74.79
 
-2020-02-09 20:32:45,120 - log\train.log - INFO -            FOREST: precision:  48.05%; recall:  67.77%; FB1:  56.23  6770
+2020-02-10 22:54:41,458 - log\train.log - INFO -            FOREST: precision:  70.57%; recall:  91.92%; FB1:  79.84  6252
 
-2020-02-09 20:32:45,120 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 22:54:41,458 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:32:45,120 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  13
+2020-02-10 22:54:41,458 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  47
 
-2020-02-09 20:41:14,886 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:41:22,636 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7346 phrases; correct: 3354.
+2020-02-10 22:54:41,536 - log\train.log - INFO - new best test f1 score:74.790
+2020-02-10 23:03:01,425 - log\train.log - INFO - evaluate:dev
+2020-02-10 23:03:09,081 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6609 phrases; correct: 4450.
 
-2020-02-09 20:41:22,636 - log\train.log - INFO - accuracy:  80.82%; precision:  45.66%; recall:  59.89%; FB1:  51.82
+2020-02-10 23:03:09,081 - log\train.log - INFO - accuracy:  81.89%; precision:  67.33%; recall:  79.46%; FB1:  72.90
 
-2020-02-09 20:41:22,636 - log\train.log - INFO -            FOREST: precision:  46.75%; recall:  69.88%; FB1:  56.02  7174
+2020-02-10 23:03:09,081 - log\train.log - INFO -            FOREST: precision:  68.17%; recall:  92.71%; FB1:  78.57  6528
 
-2020-02-09 20:41:22,636 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:03:09,081 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:41:22,636 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  172
+2020-02-10 23:03:09,081 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  81
 
-2020-02-09 20:41:22,636 - log\train.log - INFO - evaluate:test
-2020-02-09 20:41:30,105 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7001 phrases; correct: 3359.
+2020-02-10 23:03:09,159 - log\train.log - INFO - new best dev f1 score:72.900
+2020-02-10 23:03:10,691 - log\train.log - INFO - model saved
+2020-02-10 23:03:10,691 - log\train.log - INFO - evaluate:test
+2020-02-10 23:03:18,128 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6287 phrases; correct: 4463.
 
-2020-02-09 20:41:30,105 - log\train.log - INFO - accuracy:  82.26%; precision:  47.98%; recall:  61.07%; FB1:  53.74
+2020-02-10 23:03:18,128 - log\train.log - INFO - accuracy:  83.57%; precision:  70.99%; recall:  81.15%; FB1:  75.73
 
-2020-02-09 20:41:30,105 - log\train.log - INFO -            FOREST: precision:  49.22%; recall:  69.98%; FB1:  57.79  6824
+2020-02-10 23:03:18,128 - log\train.log - INFO -            FOREST: precision:  71.87%; recall:  92.98%; FB1:  81.07  6210
 
-2020-02-09 20:41:30,105 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:03:18,128 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:41:30,105 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  177
+2020-02-10 23:03:18,128 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  77
 
-2020-02-09 20:50:08,896 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:50:16,724 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7654 phrases; correct: 3595.
+2020-02-10 23:03:18,191 - log\train.log - INFO - new best test f1 score:75.730
+2020-02-10 23:11:54,626 - log\train.log - INFO - evaluate:dev
+2020-02-10 23:12:02,313 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6603 phrases; correct: 4461.
 
-2020-02-09 20:50:16,724 - log\train.log - INFO - accuracy:  81.51%; precision:  46.97%; recall:  64.20%; FB1:  54.25
+2020-02-10 23:12:02,313 - log\train.log - INFO - accuracy:  82.71%; precision:  67.56%; recall:  79.66%; FB1:  73.11
 
-2020-02-09 20:50:16,724 - log\train.log - INFO -            FOREST: precision:  49.53%; recall:  74.90%; FB1:  59.63  7258
+2020-02-10 23:12:02,313 - log\train.log - INFO -            FOREST: precision:  68.42%; recall:  92.94%; FB1:  78.82  6520
 
-2020-02-09 20:50:16,724 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:12:02,313 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:50:16,724 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  396
+2020-02-10 23:12:02,313 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  83
 
-2020-02-09 20:50:16,724 - log\train.log - INFO - evaluate:test
-2020-02-09 20:50:24,255 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7386 phrases; correct: 3645.
+2020-02-10 23:12:02,391 - log\train.log - INFO - new best dev f1 score:73.110
+2020-02-10 23:12:03,079 - log\train.log - INFO - model saved
+2020-02-10 23:12:03,079 - log\train.log - INFO - evaluate:test
+2020-02-10 23:12:10,579 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6294 phrases; correct: 4472.
 
-2020-02-09 20:50:24,255 - log\train.log - INFO - accuracy:  83.06%; precision:  49.35%; recall:  66.27%; FB1:  56.57
+2020-02-10 23:12:10,579 - log\train.log - INFO - accuracy:  84.42%; precision:  71.05%; recall:  81.31%; FB1:  75.84
 
-2020-02-09 20:50:24,255 - log\train.log - INFO -            FOREST: precision:  52.45%; recall:  75.94%; FB1:  62.04  6950
+2020-02-10 23:12:10,579 - log\train.log - INFO -            FOREST: precision:  71.94%; recall:  93.17%; FB1:  81.19  6216
 
-2020-02-09 20:50:24,255 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:12:10,579 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:50:24,255 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  436
+2020-02-10 23:12:10,579 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  78
 
-2020-02-09 20:59:32,646 - log\train.log - INFO - evaluate:dev
-2020-02-09 20:59:40,443 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7903 phrases; correct: 3877.
+2020-02-10 23:12:10,657 - log\train.log - INFO - new best test f1 score:75.840
+2020-02-10 23:20:41,843 - log\train.log - INFO - evaluate:dev
+2020-02-10 23:20:49,421 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6615 phrases; correct: 4472.
 
-2020-02-09 20:59:40,443 - log\train.log - INFO - accuracy:  82.40%; precision:  49.06%; recall:  69.23%; FB1:  57.42
+2020-02-10 23:20:49,421 - log\train.log - INFO - accuracy:  83.29%; precision:  67.60%; recall:  79.86%; FB1:  73.22
 
-2020-02-09 20:59:40,443 - log\train.log - INFO -            FOREST: precision:  52.94%; recall:  80.77%; FB1:  63.96  7323
+2020-02-10 23:20:49,421 - log\train.log - INFO -            FOREST: precision:  68.34%; recall:  93.17%; FB1:  78.84  6544
 
-2020-02-09 20:59:40,443 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:20:49,421 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:59:40,443 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  580
+2020-02-10 23:20:49,421 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  71
 
-2020-02-09 20:59:40,443 - log\train.log - INFO - evaluate:test
-2020-02-09 20:59:47,989 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7620 phrases; correct: 3922.
+2020-02-10 23:20:49,499 - log\train.log - INFO - new best dev f1 score:73.220
+2020-02-10 23:20:50,171 - log\train.log - INFO - model saved
+2020-02-10 23:20:50,171 - log\train.log - INFO - evaluate:test
+2020-02-10 23:20:57,624 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6315 phrases; correct: 4484.
 
-2020-02-09 20:59:47,989 - log\train.log - INFO - accuracy:  84.02%; precision:  51.47%; recall:  71.31%; FB1:  59.79
+2020-02-10 23:20:57,624 - log\train.log - INFO - accuracy:  84.98%; precision:  71.01%; recall:  81.53%; FB1:  75.90
 
-2020-02-09 20:59:47,989 - log\train.log - INFO -            FOREST: precision:  55.74%; recall:  81.71%; FB1:  66.27  7036
+2020-02-10 23:20:57,624 - log\train.log - INFO -            FOREST: precision:  71.77%; recall:  93.42%; FB1:  81.17  6248
 
-2020-02-09 20:59:47,989 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:20:57,624 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 20:59:47,989 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  584
+2020-02-10 23:20:57,624 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  67
 
-2020-02-09 21:08:23,722 - log\train.log - INFO - evaluate:dev
-2020-02-09 21:08:31,472 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8048 phrases; correct: 4044.
+2020-02-10 23:20:57,686 - log\train.log - INFO - new best test f1 score:75.900
+2020-02-10 23:29:52,261 - log\train.log - INFO - evaluate:dev
+2020-02-10 23:29:59,871 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6654 phrases; correct: 4474.
 
-2020-02-09 21:08:31,472 - log\train.log - INFO - accuracy:  83.20%; precision:  50.25%; recall:  72.21%; FB1:  59.26
+2020-02-10 23:29:59,871 - log\train.log - INFO - accuracy:  83.77%; precision:  67.24%; recall:  79.89%; FB1:  73.02
 
-2020-02-09 21:08:31,472 - log\train.log - INFO -            FOREST: precision:  55.04%; recall:  84.25%; FB1:  66.58  7347
+2020-02-10 23:29:59,871 - log\train.log - INFO -            FOREST: precision:  67.81%; recall:  93.21%; FB1:  78.51  6598
 
-2020-02-09 21:08:31,472 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:29:59,871 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:08:31,472 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  701
+2020-02-10 23:29:59,871 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  56
 
-2020-02-09 21:08:31,472 - log\train.log - INFO - evaluate:test
-2020-02-09 21:08:38,988 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7800 phrases; correct: 4076.
+2020-02-10 23:29:59,871 - log\train.log - INFO - evaluate:test
+2020-02-10 23:30:07,402 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6369 phrases; correct: 4475.
 
-2020-02-09 21:08:38,988 - log\train.log - INFO - accuracy:  84.89%; precision:  52.26%; recall:  74.11%; FB1:  61.29
+2020-02-10 23:30:07,402 - log\train.log - INFO - accuracy:  85.38%; precision:  70.26%; recall:  81.36%; FB1:  75.41
 
-2020-02-09 21:08:38,988 - log\train.log - INFO -            FOREST: precision:  57.45%; recall:  84.92%; FB1:  68.53  7095
+2020-02-10 23:30:07,402 - log\train.log - INFO -            FOREST: precision:  70.86%; recall:  93.23%; FB1:  80.52  6315
 
-2020-02-09 21:08:38,988 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:30:07,402 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:08:38,988 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  705
+2020-02-10 23:30:07,402 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  54
 
-2020-02-09 21:17:42,917 - log\train.log - INFO - evaluate:dev
-2020-02-09 21:17:50,667 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8114 phrases; correct: 4200.
+2020-02-10 23:38:50,058 - log\train.log - INFO - evaluate:dev
+2020-02-10 23:38:57,746 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6501 phrases; correct: 4446.
 
-2020-02-09 21:17:50,667 - log\train.log - INFO - accuracy:  83.86%; precision:  51.76%; recall:  75.00%; FB1:  61.25
+2020-02-10 23:38:57,746 - log\train.log - INFO - accuracy:  84.50%; precision:  68.39%; recall:  79.39%; FB1:  73.48
 
-2020-02-09 21:17:50,667 - log\train.log - INFO -            FOREST: precision:  57.16%; recall:  87.50%; FB1:  69.15  7348
+2020-02-10 23:38:57,746 - log\train.log - INFO -            FOREST: precision:  68.87%; recall:  92.62%; FB1:  79.00  6456
 
-2020-02-09 21:17:50,667 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:38:57,746 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:17:50,667 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  766
+2020-02-10 23:38:57,746 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  45
 
-2020-02-09 21:17:50,667 - log\train.log - INFO - evaluate:test
-2020-02-09 21:17:58,229 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7891 phrases; correct: 4214.
+2020-02-10 23:38:57,824 - log\train.log - INFO - new best dev f1 score:73.480
+2020-02-10 23:38:58,621 - log\train.log - INFO - model saved
+2020-02-10 23:38:58,621 - log\train.log - INFO - evaluate:test
+2020-02-10 23:39:06,043 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6157 phrases; correct: 4440.
 
-2020-02-09 21:17:58,229 - log\train.log - INFO - accuracy:  85.62%; precision:  53.40%; recall:  76.62%; FB1:  62.94
+2020-02-10 23:39:06,043 - log\train.log - INFO - accuracy:  86.00%; precision:  72.11%; recall:  80.73%; FB1:  76.18
 
-2020-02-09 21:17:58,229 - log\train.log - INFO -            FOREST: precision:  59.12%; recall:  87.79%; FB1:  70.66  7128
+2020-02-10 23:39:06,058 - log\train.log - INFO -            FOREST: precision:  72.63%; recall:  92.50%; FB1:  81.37  6113
 
-2020-02-09 21:17:58,229 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:39:06,058 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:17:58,229 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  763
+2020-02-10 23:39:06,058 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  44
 
-2020-02-09 21:26:49,350 - log\train.log - INFO - evaluate:dev
-2020-02-09 21:26:57,084 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8160 phrases; correct: 4319.
+2020-02-10 23:39:06,121 - log\train.log - INFO - new best test f1 score:76.180
+2020-02-10 23:47:46,916 - log\train.log - INFO - evaluate:dev
+2020-02-10 23:47:54,525 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6236 phrases; correct: 4407.
 
-2020-02-09 21:26:57,084 - log\train.log - INFO - accuracy:  84.45%; precision:  52.93%; recall:  77.12%; FB1:  62.78
+2020-02-10 23:47:54,525 - log\train.log - INFO - accuracy:  85.10%; precision:  70.67%; recall:  78.70%; FB1:  74.47
 
-2020-02-09 21:26:57,084 - log\train.log - INFO -            FOREST: precision:  58.73%; recall:  89.98%; FB1:  71.07  7354
+2020-02-10 23:47:54,525 - log\train.log - INFO -            FOREST: precision:  71.09%; recall:  91.81%; FB1:  80.13  6199
 
-2020-02-09 21:26:57,084 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:47:54,525 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:26:57,084 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  806
+2020-02-10 23:47:54,525 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  37
 
-2020-02-09 21:26:57,084 - log\train.log - INFO - evaluate:test
-2020-02-09 21:27:04,647 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7994 phrases; correct: 4316.
+2020-02-10 23:47:54,619 - log\train.log - INFO - new best dev f1 score:74.470
+2020-02-10 23:47:56,306 - log\train.log - INFO - model saved
+2020-02-10 23:47:56,306 - log\train.log - INFO - evaluate:test
+2020-02-10 23:48:03,728 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5926 phrases; correct: 4400.
 
-2020-02-09 21:27:04,647 - log\train.log - INFO - accuracy:  86.23%; precision:  53.99%; recall:  78.47%; FB1:  63.97
+2020-02-10 23:48:03,728 - log\train.log - INFO - accuracy:  86.63%; precision:  74.25%; recall:  80.00%; FB1:  77.02
 
-2020-02-09 21:27:04,647 - log\train.log - INFO -            FOREST: precision:  60.14%; recall:  89.92%; FB1:  72.07  7177
+2020-02-10 23:48:03,728 - log\train.log - INFO -            FOREST: precision:  74.74%; recall:  91.67%; FB1:  82.34  5887
 
-2020-02-09 21:27:04,647 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:48:03,728 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:27:04,647 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  817
+2020-02-10 23:48:03,728 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  39
 
-2020-02-09 21:35:58,732 - log\train.log - INFO - evaluate:dev
-2020-02-09 21:36:06,560 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8238 phrases; correct: 4400.
+2020-02-10 23:48:03,791 - log\train.log - INFO - new best test f1 score:77.020
+2020-02-10 23:57:09,699 - log\train.log - INFO - evaluate:dev
+2020-02-10 23:57:17,355 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6139 phrases; correct: 4397.
 
-2020-02-09 21:36:06,560 - log\train.log - INFO - accuracy:  85.19%; precision:  53.41%; recall:  78.57%; FB1:  63.59
+2020-02-10 23:57:17,355 - log\train.log - INFO - accuracy:  85.72%; precision:  71.62%; recall:  78.52%; FB1:  74.91
 
-2020-02-09 21:36:06,560 - log\train.log - INFO -            FOREST: precision:  59.64%; recall:  91.67%; FB1:  72.26  7378
+2020-02-10 23:57:17,355 - log\train.log - INFO -            FOREST: precision:  72.08%; recall:  91.60%; FB1:  80.68  6100
 
-2020-02-09 21:36:06,560 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:57:17,355 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:36:06,560 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  860
+2020-02-10 23:57:17,355 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  39
 
-2020-02-09 21:36:06,560 - log\train.log - INFO - evaluate:test
-2020-02-09 21:36:14,185 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8144 phrases; correct: 4371.
+2020-02-10 23:57:17,433 - log\train.log - INFO - new best dev f1 score:74.910
+2020-02-10 23:57:19,137 - log\train.log - INFO - model saved
+2020-02-10 23:57:19,137 - log\train.log - INFO - evaluate:test
+2020-02-10 23:57:26,637 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5866 phrases; correct: 4387.
 
-2020-02-09 21:36:14,185 - log\train.log - INFO - accuracy:  86.94%; precision:  53.67%; recall:  79.47%; FB1:  64.07
+2020-02-10 23:57:26,637 - log\train.log - INFO - accuracy:  87.16%; precision:  74.79%; recall:  79.76%; FB1:  77.20
 
-2020-02-09 21:36:14,185 - log\train.log - INFO -            FOREST: precision:  60.31%; recall:  91.06%; FB1:  72.56  7248
+2020-02-10 23:57:26,637 - log\train.log - INFO -            FOREST: precision:  75.29%; recall:  91.40%; FB1:  82.56  5827
 
-2020-02-09 21:36:14,185 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-10 23:57:26,637 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:36:14,185 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  896
+2020-02-10 23:57:26,637 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  39
 
-2020-02-09 21:46:02,292 - log\train.log - INFO - evaluate:dev
-2020-02-09 21:46:11,385 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8272 phrases; correct: 4425.
+2020-02-10 23:57:26,699 - log\train.log - INFO - new best test f1 score:77.200
+2020-02-11 00:06:54,572 - log\train.log - INFO - evaluate:dev
+2020-02-11 00:07:02,182 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6140 phrases; correct: 4412.
 
-2020-02-09 21:46:11,401 - log\train.log - INFO - accuracy:  86.14%; precision:  53.49%; recall:  79.02%; FB1:  63.80
+2020-02-11 00:07:02,182 - log\train.log - INFO - accuracy:  86.25%; precision:  71.86%; recall:  78.79%; FB1:  75.16
 
-2020-02-09 21:46:11,401 - log\train.log - INFO -            FOREST: precision:  60.39%; recall:  92.19%; FB1:  72.98  7327
+2020-02-11 00:07:02,182 - log\train.log - INFO -            FOREST: precision:  72.49%; recall:  91.92%; FB1:  81.06  6086
 
-2020-02-09 21:46:11,401 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-11 00:07:02,182 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:46:11,401 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  945
+2020-02-11 00:07:02,182 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  54
 
-2020-02-09 21:46:11,401 - log\train.log - INFO - evaluate:test
-2020-02-09 21:46:20,120 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8205 phrases; correct: 4391.
+2020-02-11 00:07:02,260 - log\train.log - INFO - new best dev f1 score:75.160
+2020-02-11 00:07:03,822 - log\train.log - INFO - model saved
+2020-02-11 00:07:03,822 - log\train.log - INFO - evaluate:test
+2020-02-11 00:07:11,260 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5877 phrases; correct: 4403.
 
-2020-02-09 21:46:20,120 - log\train.log - INFO - accuracy:  87.86%; precision:  53.52%; recall:  79.84%; FB1:  64.08
+2020-02-11 00:07:11,260 - log\train.log - INFO - accuracy:  87.65%; precision:  74.92%; recall:  80.05%; FB1:  77.40
 
-2020-02-09 21:46:20,120 - log\train.log - INFO -            FOREST: precision:  61.03%; recall:  91.48%; FB1:  73.21  7195
+2020-02-11 00:07:11,260 - log\train.log - INFO -            FOREST: precision:  75.63%; recall:  91.73%; FB1:  82.90  5822
 
-2020-02-09 21:46:20,120 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-11 00:07:11,260 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:46:20,120 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1010
+2020-02-11 00:07:11,260 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  55
 
-2020-02-09 21:56:09,740 - log\train.log - INFO - evaluate:dev
-2020-02-09 21:56:18,115 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8378 phrases; correct: 4413.
+2020-02-11 00:07:11,322 - log\train.log - INFO - new best test f1 score:77.400
+2020-02-11 00:16:20,254 - log\train.log - INFO - evaluate:dev
+2020-02-11 00:16:27,863 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6230 phrases; correct: 4455.
 
-2020-02-09 21:56:18,115 - log\train.log - INFO - accuracy:  87.24%; precision:  52.67%; recall:  78.80%; FB1:  63.14
+2020-02-11 00:16:27,863 - log\train.log - INFO - accuracy:  86.82%; precision:  71.51%; recall:  79.55%; FB1:  75.32
 
-2020-02-09 21:56:18,115 - log\train.log - INFO -            FOREST: precision:  60.83%; recall:  91.94%; FB1:  73.21  7255
+2020-02-11 00:16:27,863 - log\train.log - INFO -            FOREST: precision:  72.65%; recall:  92.81%; FB1:  81.50  6132
 
-2020-02-09 21:56:18,115 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-11 00:16:27,863 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:56:18,115 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1123
+2020-02-11 00:16:27,863 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  98
 
-2020-02-09 21:56:18,115 - log\train.log - INFO - evaluate:test
-2020-02-09 21:56:25,615 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8299 phrases; correct: 4377.
+2020-02-11 00:16:27,941 - log\train.log - INFO - new best dev f1 score:75.320
+2020-02-11 00:16:28,707 - log\train.log - INFO - model saved
+2020-02-11 00:16:28,707 - log\train.log - INFO - evaluate:test
+2020-02-11 00:16:36,176 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5975 phrases; correct: 4428.
 
-2020-02-09 21:56:25,615 - log\train.log - INFO - accuracy:  88.94%; precision:  52.74%; recall:  79.58%; FB1:  63.44
+2020-02-11 00:16:36,176 - log\train.log - INFO - accuracy:  88.18%; precision:  74.11%; recall:  80.51%; FB1:  77.18
 
-2020-02-09 21:56:25,615 - log\train.log - INFO -            FOREST: precision:  61.31%; recall:  91.19%; FB1:  73.32  7139
+2020-02-11 00:16:36,176 - log\train.log - INFO -            FOREST: precision:  75.40%; recall:  92.25%; FB1:  82.98  5873
 
-2020-02-09 21:56:25,615 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+2020-02-11 00:16:36,176 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
 
-2020-02-09 21:56:25,615 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1160
+2020-02-11 00:16:36,176 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  102
 
+2020-02-11 00:25:44,170 - log\train.log - INFO - evaluate:dev
+2020-02-11 00:25:51,826 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6453 phrases; correct: 4498.
+
+2020-02-11 00:25:51,826 - log\train.log - INFO - accuracy:  87.39%; precision:  69.70%; recall:  80.32%; FB1:  74.64
+
+2020-02-11 00:25:51,826 - log\train.log - INFO -            FOREST: precision:  72.11%; recall:  93.71%; FB1:  81.50  6238
+
+2020-02-11 00:25:51,826 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:25:51,826 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  215
+
+2020-02-11 00:25:51,826 - log\train.log - INFO - evaluate:test
+2020-02-11 00:25:59,264 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6199 phrases; correct: 4473.
+
+2020-02-11 00:25:59,264 - log\train.log - INFO - accuracy:  88.80%; precision:  72.16%; recall:  81.33%; FB1:  76.47
+
+2020-02-11 00:25:59,264 - log\train.log - INFO -            FOREST: precision:  74.67%; recall:  93.19%; FB1:  82.91  5990
+
+2020-02-11 00:25:59,264 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:25:59,264 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  209
+
+2020-02-11 00:35:19,981 - log\train.log - INFO - evaluate:dev
+2020-02-11 00:35:27,543 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7080 phrases; correct: 4527.
+
+2020-02-11 00:35:27,543 - log\train.log - INFO - accuracy:  88.11%; precision:  63.94%; recall:  80.84%; FB1:  71.40
+
+2020-02-11 00:35:27,543 - log\train.log - INFO -            FOREST: precision:  68.97%; recall:  94.31%; FB1:  79.67  6564
+
+2020-02-11 00:35:27,543 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:35:27,543 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  516
+
+2020-02-11 00:35:27,543 - log\train.log - INFO - evaluate:test
+2020-02-11 00:35:34,918 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6849 phrases; correct: 4513.
+
+2020-02-11 00:35:34,918 - log\train.log - INFO - accuracy:  89.59%; precision:  65.89%; recall:  82.05%; FB1:  73.09
+
+2020-02-11 00:35:34,918 - log\train.log - INFO -            FOREST: precision:  71.31%; recall:  94.02%; FB1:  81.10  6329
+
+2020-02-11 00:35:34,918 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:35:34,918 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  520
+
+2020-02-11 00:45:21,086 - log\train.log - INFO - evaluate:dev
+2020-02-11 00:45:28,664 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7833 phrases; correct: 4542.
+
+2020-02-11 00:45:28,664 - log\train.log - INFO - accuracy:  88.77%; precision:  57.99%; recall:  81.11%; FB1:  67.62
+
+2020-02-11 00:45:28,664 - log\train.log - INFO -            FOREST: precision:  65.27%; recall:  94.62%; FB1:  77.25  6959
+
+2020-02-11 00:45:28,664 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:45:28,664 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  874
+
+2020-02-11 00:45:28,664 - log\train.log - INFO - evaluate:test
+2020-02-11 00:45:36,086 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7736 phrases; correct: 4527.
+
+2020-02-11 00:45:36,086 - log\train.log - INFO - accuracy:  90.31%; precision:  58.52%; recall:  82.31%; FB1:  68.40
+
+2020-02-11 00:45:36,086 - log\train.log - INFO -            FOREST: precision:  66.59%; recall:  94.31%; FB1:  78.07  6798
+
+2020-02-11 00:45:36,086 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:45:36,086 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  938
+
+2020-02-11 00:56:03,170 - log\train.log - INFO - evaluate:dev
+2020-02-11 00:56:10,811 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8558 phrases; correct: 4540.
+
+2020-02-11 00:56:10,811 - log\train.log - INFO - accuracy:  89.32%; precision:  53.05%; recall:  81.07%; FB1:  64.13
+
+2020-02-11 00:56:10,811 - log\train.log - INFO -            FOREST: precision:  61.84%; recall:  94.58%; FB1:  74.79  7341
+
+2020-02-11 00:56:10,811 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:56:10,811 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1217
+
+2020-02-11 00:56:10,826 - log\train.log - INFO - evaluate:test
+2020-02-11 00:56:18,233 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8431 phrases; correct: 4540.
+
+2020-02-11 00:56:18,233 - log\train.log - INFO - accuracy:  90.89%; precision:  53.85%; recall:  82.55%; FB1:  65.18
+
+2020-02-11 00:56:18,233 - log\train.log - INFO -            FOREST: precision:  63.43%; recall:  94.58%; FB1:  75.94  7157
+
+2020-02-11 00:56:18,233 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 00:56:18,233 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1274
+
+2020-02-11 01:05:43,996 - log\train.log - INFO - evaluate:dev
+2020-02-11 01:05:51,575 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8994 phrases; correct: 4541.
+
+2020-02-11 01:05:51,575 - log\train.log - INFO - accuracy:  90.03%; precision:  50.49%; recall:  81.09%; FB1:  62.23
+
+2020-02-11 01:05:51,575 - log\train.log - INFO -            FOREST: precision:  60.35%; recall:  94.60%; FB1:  73.69  7525
+
+2020-02-11 01:05:51,575 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:05:51,575 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1469
+
+2020-02-11 01:05:51,575 - log\train.log - INFO - evaluate:test
+2020-02-11 01:05:59,075 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8797 phrases; correct: 4552.
+
+2020-02-11 01:05:59,075 - log\train.log - INFO - accuracy:  91.64%; precision:  51.74%; recall:  82.76%; FB1:  63.68
+
+2020-02-11 01:05:59,075 - log\train.log - INFO -            FOREST: precision:  62.42%; recall:  94.83%; FB1:  75.29  7292
+
+2020-02-11 01:05:59,075 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:05:59,075 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1505
+
+2020-02-11 01:16:31,082 - log\train.log - INFO - evaluate:dev
+2020-02-11 01:16:38,675 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 9187 phrases; correct: 4563.
+
+2020-02-11 01:16:38,675 - log\train.log - INFO - accuracy:  90.63%; precision:  49.67%; recall:  81.48%; FB1:  61.72
+
+2020-02-11 01:16:38,675 - log\train.log - INFO -            FOREST: precision:  60.36%; recall:  95.06%; FB1:  73.83  7560
+
+2020-02-11 01:16:38,675 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:16:38,675 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1627
+
+2020-02-11 01:16:38,675 - log\train.log - INFO - evaluate:test
+2020-02-11 01:16:46,097 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8873 phrases; correct: 4577.
+
+2020-02-11 01:16:46,097 - log\train.log - INFO - accuracy:  92.31%; precision:  51.58%; recall:  83.22%; FB1:  63.69
+
+2020-02-11 01:16:46,097 - log\train.log - INFO -            FOREST: precision:  63.07%; recall:  95.35%; FB1:  75.92  7257
+
+2020-02-11 01:16:46,097 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:16:46,097 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1616
+
+2020-02-11 01:26:51,636 - log\train.log - INFO - evaluate:dev
+2020-02-11 01:26:59,199 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 9202 phrases; correct: 4589.
+
+2020-02-11 01:26:59,199 - log\train.log - INFO - accuracy:  91.27%; precision:  49.87%; recall:  81.95%; FB1:  62.01
+
+2020-02-11 01:26:59,199 - log\train.log - INFO -            FOREST: precision:  61.07%; recall:  95.60%; FB1:  74.53  7514
+
+2020-02-11 01:26:59,199 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:26:59,199 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1688
+
+2020-02-11 01:26:59,199 - log\train.log - INFO - evaluate:test
+2020-02-11 01:27:06,683 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8825 phrases; correct: 4598.
+
+2020-02-11 01:27:06,683 - log\train.log - INFO - accuracy:  92.93%; precision:  52.10%; recall:  83.60%; FB1:  64.20
+
+2020-02-11 01:27:06,683 - log\train.log - INFO -            FOREST: precision:  64.03%; recall:  95.79%; FB1:  76.75  7181
+
+2020-02-11 01:27:06,683 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:27:06,683 - log\train.log - INFO -              UNIT: precision:   0.00%; recall:   0.00%; FB1:   0.00  1644
+
+2020-02-11 01:36:44,871 - log\train.log - INFO - evaluate:dev
+2020-02-11 01:36:52,449 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 9024 phrases; correct: 4602.
+
+2020-02-11 01:36:52,449 - log\train.log - INFO - accuracy:  91.98%; precision:  51.00%; recall:  82.18%; FB1:  62.94
+
+2020-02-11 01:36:52,449 - log\train.log - INFO -            FOREST: precision:  62.66%; recall:  95.85%; FB1:  75.78  7343
+
+2020-02-11 01:36:52,449 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:36:52,449 - log\train.log - INFO -              UNIT: precision:   0.06%; recall:   0.17%; FB1:   0.09  1681
+
+2020-02-11 01:36:52,464 - log\train.log - INFO - evaluate:test
+2020-02-11 01:36:59,902 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8588 phrases; correct: 4619.
+
+2020-02-11 01:36:59,902 - log\train.log - INFO - accuracy:  93.61%; precision:  53.78%; recall:  83.98%; FB1:  65.57
+
+2020-02-11 01:36:59,902 - log\train.log - INFO -            FOREST: precision:  66.08%; recall:  96.21%; FB1:  78.34  6989
+
+2020-02-11 01:36:59,902 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:36:59,902 - log\train.log - INFO -              UNIT: precision:   0.06%; recall:   0.17%; FB1:   0.09  1599
+
+2020-02-11 01:47:48,900 - log\train.log - INFO - evaluate:dev
+2020-02-11 01:47:56,478 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8710 phrases; correct: 4609.
+
+2020-02-11 01:47:56,478 - log\train.log - INFO - accuracy:  92.66%; precision:  52.92%; recall:  82.30%; FB1:  64.42
+
+2020-02-11 01:47:56,478 - log\train.log - INFO -            FOREST: precision:  64.66%; recall:  96.00%; FB1:  77.28  7126
+
+2020-02-11 01:47:56,478 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:47:56,478 - log\train.log - INFO -              UNIT: precision:   0.06%; recall:   0.17%; FB1:   0.09  1584
+
+2020-02-11 01:47:56,478 - log\train.log - INFO - evaluate:test
+2020-02-11 01:48:03,900 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 8273 phrases; correct: 4643.
+
+2020-02-11 01:48:03,900 - log\train.log - INFO - accuracy:  94.30%; precision:  56.12%; recall:  84.42%; FB1:  67.42
+
+2020-02-11 01:48:03,900 - log\train.log - INFO -            FOREST: precision:  68.58%; recall:  96.71%; FB1:  80.25  6769
+
+2020-02-11 01:48:03,900 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:48:03,900 - log\train.log - INFO -              UNIT: precision:   0.07%; recall:   0.17%; FB1:   0.10  1504
+
+2020-02-11 01:58:26,253 - log\train.log - INFO - evaluate:dev
+2020-02-11 01:58:33,799 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 8366 phrases; correct: 4617.
+
+2020-02-11 01:58:33,799 - log\train.log - INFO - accuracy:  93.31%; precision:  55.19%; recall:  82.45%; FB1:  66.12
+
+2020-02-11 01:58:33,799 - log\train.log - INFO -            FOREST: precision:  66.75%; recall:  96.17%; FB1:  78.80  6915
+
+2020-02-11 01:58:33,799 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:58:33,815 - log\train.log - INFO -              UNIT: precision:   0.07%; recall:   0.17%; FB1:   0.10  1451
+
+2020-02-11 01:58:33,815 - log\train.log - INFO - evaluate:test
+2020-02-11 01:58:41,206 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7943 phrases; correct: 4645.
+
+2020-02-11 01:58:41,206 - log\train.log - INFO - accuracy:  94.94%; precision:  58.48%; recall:  84.45%; FB1:  69.11
+
+2020-02-11 01:58:41,206 - log\train.log - INFO -            FOREST: precision:  70.68%; recall:  96.75%; FB1:  81.69  6570
+
+2020-02-11 01:58:41,206 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 01:58:41,206 - log\train.log - INFO -              UNIT: precision:   0.07%; recall:   0.17%; FB1:   0.10  1373
+
+2020-02-11 02:08:38,581 - log\train.log - INFO - evaluate:dev
+2020-02-11 02:08:46,284 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7987 phrases; correct: 4611.
+
+2020-02-11 02:08:46,284 - log\train.log - INFO - accuracy:  93.96%; precision:  57.73%; recall:  82.34%; FB1:  67.87
+
+2020-02-11 02:08:46,284 - log\train.log - INFO -            FOREST: precision:  68.84%; recall:  96.04%; FB1:  80.19  6697
+
+2020-02-11 02:08:46,284 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:08:46,284 - log\train.log - INFO -              UNIT: precision:   0.08%; recall:   0.17%; FB1:   0.11  1290
+
+2020-02-11 02:08:46,284 - log\train.log - INFO - evaluate:test
+2020-02-11 02:08:53,659 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7577 phrases; correct: 4630.
+
+2020-02-11 02:08:53,659 - log\train.log - INFO - accuracy:  95.49%; precision:  61.11%; recall:  84.18%; FB1:  70.81
+
+2020-02-11 02:08:53,659 - log\train.log - INFO -            FOREST: precision:  72.76%; recall:  96.44%; FB1:  82.94  6362
+
+2020-02-11 02:08:53,659 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:08:53,659 - log\train.log - INFO -              UNIT: precision:   0.08%; recall:   0.17%; FB1:   0.11  1215
+
+2020-02-11 02:19:03,926 - log\train.log - INFO - evaluate:dev
+2020-02-11 02:19:11,551 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7561 phrases; correct: 4608.
+
+2020-02-11 02:19:11,551 - log\train.log - INFO - accuracy:  94.58%; precision:  60.94%; recall:  82.29%; FB1:  70.03
+
+2020-02-11 02:19:11,551 - log\train.log - INFO -            FOREST: precision:  71.34%; recall:  95.98%; FB1:  81.84  6458
+
+2020-02-11 02:19:11,551 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:19:11,551 - log\train.log - INFO -              UNIT: precision:   0.09%; recall:   0.17%; FB1:   0.12  1103
+
+2020-02-11 02:19:11,551 - log\train.log - INFO - evaluate:test
+2020-02-11 02:19:19,004 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 7253 phrases; correct: 4623.
+
+2020-02-11 02:19:19,004 - log\train.log - INFO - accuracy:  96.03%; precision:  63.74%; recall:  84.05%; FB1:  72.50
+
+2020-02-11 02:19:19,004 - log\train.log - INFO -            FOREST: precision:  74.79%; recall:  96.29%; FB1:  84.19  6180
+
+2020-02-11 02:19:19,004 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:19:19,004 - log\train.log - INFO -              UNIT: precision:   0.09%; recall:   0.17%; FB1:   0.12  1073
+
+2020-02-11 02:30:00,444 - log\train.log - INFO - evaluate:dev
+2020-02-11 02:30:08,054 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 7178 phrases; correct: 4636.
+
+2020-02-11 02:30:08,054 - log\train.log - INFO - accuracy:  95.20%; precision:  64.59%; recall:  82.79%; FB1:  72.56
+
+2020-02-11 02:30:08,054 - log\train.log - INFO -            FOREST: precision:  74.35%; recall:  96.52%; FB1:  84.00  6231
+
+2020-02-11 02:30:08,054 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:30:08,054 - log\train.log - INFO -              UNIT: precision:   0.32%; recall:   0.50%; FB1:   0.39  947
+
+2020-02-11 02:30:08,054 - log\train.log - INFO - evaluate:test
+2020-02-11 02:30:15,460 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6932 phrases; correct: 4651.
+
+2020-02-11 02:30:15,460 - log\train.log - INFO - accuracy:  96.57%; precision:  67.09%; recall:  84.56%; FB1:  74.82
+
+2020-02-11 02:30:15,460 - log\train.log - INFO -            FOREST: precision:  77.57%; recall:  96.83%; FB1:  86.14  5992
+
+2020-02-11 02:30:15,460 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:30:15,460 - log\train.log - INFO -              UNIT: precision:   0.32%; recall:   0.50%; FB1:   0.39  940
+
+2020-02-11 02:40:21,398 - log\train.log - INFO - evaluate:dev
+2020-02-11 02:40:29,069 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6861 phrases; correct: 4707.
+
+2020-02-11 02:40:29,069 - log\train.log - INFO - accuracy:  95.75%; precision:  68.61%; recall:  84.05%; FB1:  75.55
+
+2020-02-11 02:40:29,069 - log\train.log - INFO -            FOREST: precision:  77.85%; recall:  97.60%; FB1:  86.61  6018
+
+2020-02-11 02:40:29,069 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:40:29,069 - log\train.log - INFO -              UNIT: precision:   2.61%; recall:   3.67%; FB1:   3.05  843
+
+2020-02-11 02:40:29,210 - log\train.log - INFO - new best dev f1 score:75.550
+2020-02-11 02:40:30,554 - log\train.log - INFO - model saved
+2020-02-11 02:40:30,554 - log\train.log - INFO - evaluate:test
+2020-02-11 02:40:38,054 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6631 phrases; correct: 4715.
+
+2020-02-11 02:40:38,054 - log\train.log - INFO - accuracy:  97.02%; precision:  71.11%; recall:  85.73%; FB1:  77.73
+
+2020-02-11 02:40:38,054 - log\train.log - INFO -            FOREST: precision:  81.08%; recall:  97.88%; FB1:  88.69  5794
+
+2020-02-11 02:40:38,054 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:40:38,054 - log\train.log - INFO -              UNIT: precision:   2.03%; recall:   2.83%; FB1:   2.37  837
+
+2020-02-11 02:40:38,132 - log\train.log - INFO - new best test f1 score:77.730
+2020-02-11 02:51:21,583 - log\train.log - INFO - evaluate:dev
+2020-02-11 02:51:29,239 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6737 phrases; correct: 4833.
+
+2020-02-11 02:51:29,239 - log\train.log - INFO - accuracy:  96.27%; precision:  71.74%; recall:  86.30%; FB1:  78.35
+
+2020-02-11 02:51:29,239 - log\train.log - INFO -            FOREST: precision:  80.76%; recall:  98.19%; FB1:  88.62  5836
+
+2020-02-11 02:51:29,239 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:51:29,239 - log\train.log - INFO -              UNIT: precision:  13.32%; recall:  20.00%; FB1:  15.99  901
+
+2020-02-11 02:51:29,317 - log\train.log - INFO - new best dev f1 score:78.350
+2020-02-11 02:51:31,005 - log\train.log - INFO - model saved
+2020-02-11 02:51:31,005 - log\train.log - INFO - evaluate:test
+2020-02-11 02:51:38,427 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6451 phrases; correct: 4878.
+
+2020-02-11 02:51:38,427 - log\train.log - INFO - accuracy:  97.59%; precision:  75.62%; recall:  88.69%; FB1:  81.63
+
+2020-02-11 02:51:38,427 - log\train.log - INFO -            FOREST: precision:  84.83%; recall:  98.46%; FB1:  91.14  5571
+
+2020-02-11 02:51:38,427 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 02:51:38,427 - log\train.log - INFO -              UNIT: precision:  17.27%; recall:  25.33%; FB1:  20.54  880
+
+2020-02-11 02:51:38,505 - log\train.log - INFO - new best test f1 score:81.630
+2020-02-11 03:03:01,192 - log\train.log - INFO - evaluate:dev
+2020-02-11 03:03:08,786 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6609 phrases; correct: 5043.
+
+2020-02-11 03:03:08,786 - log\train.log - INFO - accuracy:  96.86%; precision:  76.31%; recall:  90.05%; FB1:  82.61
+
+2020-02-11 03:03:08,786 - log\train.log - INFO -            FOREST: precision:  84.76%; recall:  98.58%; FB1:  91.15  5583
+
+2020-02-11 03:03:08,786 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:03:08,786 - log\train.log - INFO -              UNIT: precision:  30.31%; recall:  51.83%; FB1:  38.25  1026
+
+2020-02-11 03:03:08,864 - log\train.log - INFO - new best dev f1 score:82.610
+2020-02-11 03:03:10,442 - log\train.log - INFO - model saved
+2020-02-11 03:03:10,442 - log\train.log - INFO - evaluate:test
+2020-02-11 03:03:17,864 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 6172 phrases; correct: 5060.
+
+2020-02-11 03:03:17,864 - log\train.log - INFO - accuracy:  98.03%; precision:  81.98%; recall:  92.00%; FB1:  86.70
+
+2020-02-11 03:03:17,864 - log\train.log - INFO -            FOREST: precision:  89.35%; recall:  98.75%; FB1:  93.81  5305
+
+2020-02-11 03:03:17,864 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:03:17,864 - log\train.log - INFO -              UNIT: precision:  36.91%; recall:  53.33%; FB1:  43.63  867
+
+2020-02-11 03:03:17,942 - log\train.log - INFO - new best test f1 score:86.700
+2020-02-11 03:13:47,298 - log\train.log - INFO - evaluate:dev
+2020-02-11 03:13:54,861 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 6037 phrases; correct: 5204.
+
+2020-02-11 03:13:54,861 - log\train.log - INFO - accuracy:  97.22%; precision:  86.20%; recall:  92.93%; FB1:  89.44
+
+2020-02-11 03:13:54,861 - log\train.log - INFO -            FOREST: precision:  92.99%; recall:  98.98%; FB1:  95.89  5109
+
+2020-02-11 03:13:54,861 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:13:54,861 - log\train.log - INFO -              UNIT: precision:  48.81%; recall:  75.50%; FB1:  59.29  928
+
+2020-02-11 03:13:54,939 - log\train.log - INFO - new best dev f1 score:89.440
+2020-02-11 03:13:56,501 - log\train.log - INFO - model saved
+2020-02-11 03:13:56,501 - log\train.log - INFO - evaluate:test
+2020-02-11 03:14:03,892 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5793 phrases; correct: 5172.
+
+2020-02-11 03:14:03,892 - log\train.log - INFO - accuracy:  98.32%; precision:  89.28%; recall:  94.04%; FB1:  91.60
+
+2020-02-11 03:14:03,892 - log\train.log - INFO -            FOREST: precision:  94.65%; recall:  98.88%; FB1:  96.72  5014
+
+2020-02-11 03:14:03,892 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:14:03,892 - log\train.log - INFO -              UNIT: precision:  54.69%; recall:  71.00%; FB1:  61.78  779
+
+2020-02-11 03:14:03,970 - log\train.log - INFO - new best test f1 score:91.600
+2020-02-11 03:24:40,882 - log\train.log - INFO - evaluate:dev
+2020-02-11 03:24:48,538 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5720 phrases; correct: 5279.
+
+2020-02-11 03:24:48,538 - log\train.log - INFO - accuracy:  97.38%; precision:  92.29%; recall:  94.27%; FB1:  93.27
+
+2020-02-11 03:24:48,538 - log\train.log - INFO -            FOREST: precision:  97.26%; recall:  99.21%; FB1:  98.23  4896
+
+2020-02-11 03:24:48,538 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:24:48,538 - log\train.log - INFO -              UNIT: precision:  62.74%; recall:  86.17%; FB1:  72.61  824
+
+2020-02-11 03:24:48,632 - log\train.log - INFO - new best dev f1 score:93.270
+2020-02-11 03:24:50,178 - log\train.log - INFO - model saved
+2020-02-11 03:24:50,178 - log\train.log - INFO - evaluate:test
+2020-02-11 03:24:57,585 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5580 phrases; correct: 5274.
+
+2020-02-11 03:24:57,585 - log\train.log - INFO - accuracy:  98.52%; precision:  94.52%; recall:  95.89%; FB1:  95.20
+
+2020-02-11 03:24:57,585 - log\train.log - INFO -            FOREST: precision:  97.36%; recall:  99.12%; FB1:  98.23  4887
+
+2020-02-11 03:24:57,585 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:24:57,585 - log\train.log - INFO -              UNIT: precision:  74.46%; recall:  86.00%; FB1:  79.81  693
+
+2020-02-11 03:24:57,663 - log\train.log - INFO - new best test f1 score:95.200
+2020-02-11 03:36:05,895 - log\train.log - INFO - evaluate:dev
+2020-02-11 03:36:13,473 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5772 phrases; correct: 5319.
+
+2020-02-11 03:36:13,473 - log\train.log - INFO - accuracy:  97.14%; precision:  92.15%; recall:  94.98%; FB1:  93.55
+
+2020-02-11 03:36:13,473 - log\train.log - INFO -            FOREST: precision:  94.43%; recall:  99.31%; FB1:  96.81  5048
+
+2020-02-11 03:36:13,473 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:36:13,473 - log\train.log - INFO -              UNIT: precision:  76.24%; recall:  92.00%; FB1:  83.38  724
+
+2020-02-11 03:36:13,552 - log\train.log - INFO - new best dev f1 score:93.550
+2020-02-11 03:36:14,411 - log\train.log - INFO - model saved
+2020-02-11 03:36:14,411 - log\train.log - INFO - evaluate:test
+2020-02-11 03:36:21,942 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5671 phrases; correct: 5318.
+
+2020-02-11 03:36:21,942 - log\train.log - INFO - accuracy:  98.26%; precision:  93.78%; recall:  96.69%; FB1:  95.21
+
+2020-02-11 03:36:21,942 - log\train.log - INFO -            FOREST: precision:  93.98%; recall:  99.21%; FB1:  96.52  5067
+
+2020-02-11 03:36:21,942 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:36:21,942 - log\train.log - INFO -              UNIT: precision:  92.05%; recall:  92.67%; FB1:  92.36  604
+
+2020-02-11 03:36:22,005 - log\train.log - INFO - new best test f1 score:95.210
+2020-02-11 03:48:13,341 - log\train.log - INFO - evaluate:dev
+2020-02-11 03:48:20,935 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5928 phrases; correct: 5337.
+
+2020-02-11 03:48:20,935 - log\train.log - INFO - accuracy:  96.68%; precision:  90.03%; recall:  95.30%; FB1:  92.59
+
+2020-02-11 03:48:20,951 - log\train.log - INFO -            FOREST: precision:  89.54%; recall:  99.33%; FB1:  94.18  5325
+
+2020-02-11 03:48:20,951 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:48:20,951 - log\train.log - INFO -              UNIT: precision:  94.36%; recall:  94.83%; FB1:  94.60  603
+
+2020-02-11 03:48:20,951 - log\train.log - INFO - evaluate:test
+2020-02-11 03:48:28,388 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5669 phrases; correct: 5334.
+
+2020-02-11 03:48:28,388 - log\train.log - INFO - accuracy:  98.28%; precision:  94.09%; recall:  96.98%; FB1:  95.51
+
+2020-02-11 03:48:28,388 - log\train.log - INFO -            FOREST: precision:  94.06%; recall:  99.29%; FB1:  96.60  5067
+
+2020-02-11 03:48:28,388 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:48:28,388 - log\train.log - INFO -              UNIT: precision:  94.35%; recall:  94.67%; FB1:  94.51  602
+
+2020-02-11 03:48:28,451 - log\train.log - INFO - new best test f1 score:95.510
+2020-02-11 03:59:01,306 - log\train.log - INFO - evaluate:dev
+2020-02-11 03:59:08,962 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5951 phrases; correct: 5334.
+
+2020-02-11 03:59:08,962 - log\train.log - INFO - accuracy:  96.61%; precision:  89.63%; recall:  95.25%; FB1:  92.36
+
+2020-02-11 03:59:08,962 - log\train.log - INFO -            FOREST: precision:  89.18%; recall:  99.38%; FB1:  94.00  5349
+
+2020-02-11 03:59:08,962 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:59:08,962 - log\train.log - INFO -              UNIT: precision:  93.69%; recall:  94.00%; FB1:  93.84  602
+
+2020-02-11 03:59:08,962 - log\train.log - INFO - evaluate:test
+2020-02-11 03:59:16,384 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5675 phrases; correct: 5329.
+
+2020-02-11 03:59:16,384 - log\train.log - INFO - accuracy:  98.25%; precision:  93.90%; recall:  96.89%; FB1:  95.37
+
+2020-02-11 03:59:16,384 - log\train.log - INFO -            FOREST: precision:  93.99%; recall:  99.38%; FB1:  96.61  5075
+
+2020-02-11 03:59:16,384 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 03:59:16,384 - log\train.log - INFO -              UNIT: precision:  93.17%; recall:  93.17%; FB1:  93.17  600
+
+2020-02-11 04:10:35,426 - log\train.log - INFO - evaluate:dev
+2020-02-11 04:10:42,989 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5953 phrases; correct: 5337.
+
+2020-02-11 04:10:42,989 - log\train.log - INFO - accuracy:  96.54%; precision:  89.65%; recall:  95.30%; FB1:  92.39
+
+2020-02-11 04:10:42,989 - log\train.log - INFO -            FOREST: precision:  89.14%; recall:  99.38%; FB1:  93.98  5351
+
+2020-02-11 04:10:42,989 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:10:42,989 - log\train.log - INFO -              UNIT: precision:  94.19%; recall:  94.50%; FB1:  94.34  602
+
+2020-02-11 04:10:42,989 - log\train.log - INFO - evaluate:test
+2020-02-11 04:10:50,410 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5686 phrases; correct: 5330.
+
+2020-02-11 04:10:50,410 - log\train.log - INFO - accuracy:  98.22%; precision:  93.74%; recall:  96.91%; FB1:  95.30
+
+2020-02-11 04:10:50,410 - log\train.log - INFO -            FOREST: precision:  93.77%; recall:  99.35%; FB1:  96.48  5086
+
+2020-02-11 04:10:50,410 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:10:50,410 - log\train.log - INFO -              UNIT: precision:  93.50%; recall:  93.50%; FB1:  93.50  600
+
+2020-02-11 04:22:19,658 - log\train.log - INFO - evaluate:dev
+2020-02-11 04:22:27,283 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5943 phrases; correct: 5348.
+
+2020-02-11 04:22:27,283 - log\train.log - INFO - accuracy:  96.53%; precision:  89.99%; recall:  95.50%; FB1:  92.66
+
+2020-02-11 04:22:27,283 - log\train.log - INFO -            FOREST: precision:  89.30%; recall:  99.42%; FB1:  94.09  5344
+
+2020-02-11 04:22:27,283 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:22:27,283 - log\train.log - INFO -              UNIT: precision:  96.16%; recall:  96.00%; FB1:  96.08  599
+
+2020-02-11 04:22:27,283 - log\train.log - INFO - evaluate:test
+2020-02-11 04:22:34,705 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5676 phrases; correct: 5340.
+
+2020-02-11 04:22:34,705 - log\train.log - INFO - accuracy:  98.21%; precision:  94.08%; recall:  97.09%; FB1:  95.56
+
+2020-02-11 04:22:34,705 - log\train.log - INFO -            FOREST: precision:  93.97%; recall:  99.40%; FB1:  96.61  5077
+
+2020-02-11 04:22:34,705 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:22:34,705 - log\train.log - INFO -              UNIT: precision:  94.99%; recall:  94.83%; FB1:  94.91  599
+
+2020-02-11 04:22:34,799 - log\train.log - INFO - new best test f1 score:95.560
+2020-02-11 04:34:11,735 - log\train.log - INFO - evaluate:dev
+2020-02-11 04:34:20,172 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5993 phrases; correct: 5350.
+
+2020-02-11 04:34:20,172 - log\train.log - INFO - accuracy:  96.62%; precision:  89.27%; recall:  95.54%; FB1:  92.30
+
+2020-02-11 04:34:20,172 - log\train.log - INFO -            FOREST: precision:  88.41%; recall:  99.33%; FB1:  93.55  5393
+
+2020-02-11 04:34:20,172 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:34:20,172 - log\train.log - INFO -              UNIT: precision:  97.00%; recall:  97.00%; FB1:  97.00  600
+
+2020-02-11 04:34:20,172 - log\train.log - INFO - evaluate:test
+2020-02-11 04:34:27,656 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5696 phrases; correct: 5351.
+
+2020-02-11 04:34:27,656 - log\train.log - INFO - accuracy:  98.26%; precision:  93.94%; recall:  97.29%; FB1:  95.59
+
+2020-02-11 04:34:27,656 - log\train.log - INFO -            FOREST: precision:  93.58%; recall:  99.38%; FB1:  96.39  5097
+
+2020-02-11 04:34:27,656 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:34:27,656 - log\train.log - INFO -              UNIT: precision:  96.99%; recall:  96.83%; FB1:  96.91  599
+
+2020-02-11 04:34:27,735 - log\train.log - INFO - new best test f1 score:95.590
+2020-02-11 04:46:18,574 - log\train.log - INFO - evaluate:dev
+2020-02-11 04:46:26,199 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5924 phrases; correct: 5354.
+
+2020-02-11 04:46:26,199 - log\train.log - INFO - accuracy:  96.80%; precision:  90.38%; recall:  95.61%; FB1:  92.92
+
+2020-02-11 04:46:26,199 - log\train.log - INFO -            FOREST: precision:  89.48%; recall:  99.25%; FB1:  94.11  5324
+
+2020-02-11 04:46:26,199 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:46:26,199 - log\train.log - INFO -              UNIT: precision:  98.33%; recall:  98.33%; FB1:  98.33  600
+
+2020-02-11 04:46:26,199 - log\train.log - INFO - evaluate:test
+2020-02-11 04:46:33,636 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5660 phrases; correct: 5351.
+
+2020-02-11 04:46:33,636 - log\train.log - INFO - accuracy:  98.36%; precision:  94.54%; recall:  97.29%; FB1:  95.90
+
+2020-02-11 04:46:33,636 - log\train.log - INFO -            FOREST: precision:  94.15%; recall:  99.27%; FB1:  96.64  5061
+
+2020-02-11 04:46:33,636 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:46:33,636 - log\train.log - INFO -              UNIT: precision:  97.83%; recall:  97.67%; FB1:  97.75  599
+
+2020-02-11 04:46:33,714 - log\train.log - INFO - new best test f1 score:95.900
+2020-02-11 04:57:50,149 - log\train.log - INFO - evaluate:dev
+2020-02-11 04:57:57,759 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5912 phrases; correct: 5356.
+
+2020-02-11 04:57:57,759 - log\train.log - INFO - accuracy:  96.94%; precision:  90.60%; recall:  95.64%; FB1:  93.05
+
+2020-02-11 04:57:57,759 - log\train.log - INFO -            FOREST: precision:  89.68%; recall:  99.25%; FB1:  94.22  5312
+
+2020-02-11 04:57:57,759 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:57:57,759 - log\train.log - INFO -              UNIT: precision:  98.67%; recall:  98.67%; FB1:  98.67  600
+
+2020-02-11 04:57:57,759 - log\train.log - INFO - evaluate:test
+2020-02-11 04:58:05,165 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5655 phrases; correct: 5355.
+
+2020-02-11 04:58:05,165 - log\train.log - INFO - accuracy:  98.44%; precision:  94.69%; recall:  97.36%; FB1:  96.01
+
+2020-02-11 04:58:05,165 - log\train.log - INFO -            FOREST: precision:  94.20%; recall:  99.23%; FB1:  96.65  5056
+
+2020-02-11 04:58:05,165 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 04:58:05,165 - log\train.log - INFO -              UNIT: precision:  98.83%; recall:  98.67%; FB1:  98.75  599
+
+2020-02-11 04:58:05,243 - log\train.log - INFO - new best test f1 score:96.010
+2020-02-11 05:09:12,085 - log\train.log - INFO - evaluate:dev
+2020-02-11 05:09:19,710 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5913 phrases; correct: 5359.
+
+2020-02-11 05:09:19,710 - log\train.log - INFO - accuracy:  97.04%; precision:  90.63%; recall:  95.70%; FB1:  93.09
+
+2020-02-11 05:09:19,710 - log\train.log - INFO -            FOREST: precision:  89.69%; recall:  99.27%; FB1:  94.24  5313
+
+2020-02-11 05:09:19,710 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:09:19,710 - log\train.log - INFO -              UNIT: precision:  99.00%; recall:  99.00%; FB1:  99.00  600
+
+2020-02-11 05:09:19,710 - log\train.log - INFO - evaluate:test
+2020-02-11 05:09:27,132 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5655 phrases; correct: 5358.
+
+2020-02-11 05:09:27,132 - log\train.log - INFO - accuracy:  98.48%; precision:  94.75%; recall:  97.42%; FB1:  96.06
+
+2020-02-11 05:09:27,132 - log\train.log - INFO -            FOREST: precision:  94.24%; recall:  99.25%; FB1:  96.68  5055
+
+2020-02-11 05:09:27,132 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:09:27,132 - log\train.log - INFO -              UNIT: precision:  99.00%; recall:  99.00%; FB1:  99.00  600
+
+2020-02-11 05:09:27,210 - log\train.log - INFO - new best test f1 score:96.060
+2020-02-11 05:21:21,266 - log\train.log - INFO - evaluate:dev
+2020-02-11 05:21:28,952 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5886 phrases; correct: 5363.
+
+2020-02-11 05:21:28,952 - log\train.log - INFO - accuracy:  97.11%; precision:  91.11%; recall:  95.77%; FB1:  93.38
+
+2020-02-11 05:21:28,952 - log\train.log - INFO -            FOREST: precision:  90.22%; recall:  99.35%; FB1:  94.57  5286
+
+2020-02-11 05:21:28,952 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:21:28,952 - log\train.log - INFO -              UNIT: precision:  99.00%; recall:  99.00%; FB1:  99.00  600
+
+2020-02-11 05:21:28,967 - log\train.log - INFO - evaluate:test
+2020-02-11 05:21:36,467 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5648 phrases; correct: 5364.
+
+2020-02-11 05:21:36,467 - log\train.log - INFO - accuracy:  98.52%; precision:  94.97%; recall:  97.53%; FB1:  96.23
+
+2020-02-11 05:21:36,467 - log\train.log - INFO -            FOREST: precision:  94.53%; recall:  99.38%; FB1:  96.89  5046
+
+2020-02-11 05:21:36,467 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:21:36,467 - log\train.log - INFO -              UNIT: precision:  98.67%; recall:  99.00%; FB1:  98.84  602
+
+2020-02-11 05:21:36,545 - log\train.log - INFO - new best test f1 score:96.230
+2020-02-11 05:33:09,670 - log\train.log - INFO - evaluate:dev
+2020-02-11 05:33:17,264 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5860 phrases; correct: 5372.
+
+2020-02-11 05:33:17,264 - log\train.log - INFO - accuracy:  97.15%; precision:  91.67%; recall:  95.93%; FB1:  93.75
+
+2020-02-11 05:33:17,264 - log\train.log - INFO -            FOREST: precision:  90.78%; recall:  99.50%; FB1:  94.94  5261
+
+2020-02-11 05:33:17,264 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:33:17,264 - log\train.log - INFO -              UNIT: precision:  99.50%; recall:  99.33%; FB1:  99.42  599
+
+2020-02-11 05:33:17,342 - log\train.log - INFO - new best dev f1 score:93.750
+2020-02-11 05:33:18,983 - log\train.log - INFO - model saved
+2020-02-11 05:33:18,983 - log\train.log - INFO - evaluate:test
+2020-02-11 05:33:26,467 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5639 phrases; correct: 5368.
+
+2020-02-11 05:33:26,467 - log\train.log - INFO - accuracy:  98.53%; precision:  95.19%; recall:  97.60%; FB1:  96.38
+
+2020-02-11 05:33:26,467 - log\train.log - INFO -            FOREST: precision:  94.88%; recall:  99.52%; FB1:  97.14  5035
+
+2020-02-11 05:33:26,467 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:33:26,467 - log\train.log - INFO -              UNIT: precision:  97.85%; recall:  98.50%; FB1:  98.17  604
+
+2020-02-11 05:33:26,545 - log\train.log - INFO - new best test f1 score:96.380
+2020-02-11 05:45:03,563 - log\train.log - INFO - evaluate:dev
+2020-02-11 05:45:11,141 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5827 phrases; correct: 5377.
+
+2020-02-11 05:45:11,141 - log\train.log - INFO - accuracy:  97.24%; precision:  92.28%; recall:  96.02%; FB1:  94.11
+
+2020-02-11 05:45:11,141 - log\train.log - INFO -            FOREST: precision:  91.49%; recall:  99.62%; FB1:  95.38  5227
+
+2020-02-11 05:45:11,141 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:45:11,141 - log\train.log - INFO -              UNIT: precision:  99.17%; recall:  99.17%; FB1:  99.17  600
+
+2020-02-11 05:45:11,219 - log\train.log - INFO - new best dev f1 score:94.110
+2020-02-11 05:45:11,938 - log\train.log - INFO - model saved
+2020-02-11 05:45:11,938 - log\train.log - INFO - evaluate:test
+2020-02-11 05:45:19,360 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5611 phrases; correct: 5379.
+
+2020-02-11 05:45:19,360 - log\train.log - INFO - accuracy:  98.60%; precision:  95.87%; recall:  97.80%; FB1:  96.82
+
+2020-02-11 05:45:19,360 - log\train.log - INFO -            FOREST: precision:  95.49%; recall:  99.69%; FB1:  97.54  5011
+
+2020-02-11 05:45:19,360 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:45:19,360 - log\train.log - INFO -              UNIT: precision:  99.00%; recall:  99.00%; FB1:  99.00  600
+
+2020-02-11 05:45:19,438 - log\train.log - INFO - new best test f1 score:96.820
+2020-02-11 05:56:48,962 - log\train.log - INFO - evaluate:dev
+2020-02-11 05:56:56,618 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5808 phrases; correct: 5382.
+
+2020-02-11 05:56:56,634 - log\train.log - INFO - accuracy:  97.30%; precision:  92.67%; recall:  96.11%; FB1:  94.35
+
+2020-02-11 05:56:56,634 - log\train.log - INFO -            FOREST: precision:  91.92%; recall:  99.73%; FB1:  95.66  5208
+
+2020-02-11 05:56:56,634 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:56:56,634 - log\train.log - INFO -              UNIT: precision:  99.17%; recall:  99.17%; FB1:  99.17  600
+
+2020-02-11 05:56:56,696 - log\train.log - INFO - new best dev f1 score:94.350
+2020-02-11 05:56:58,259 - log\train.log - INFO - model saved
+2020-02-11 05:56:58,259 - log\train.log - INFO - evaluate:test
+2020-02-11 05:57:05,775 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5611 phrases; correct: 5382.
+
+2020-02-11 05:57:05,775 - log\train.log - INFO - accuracy:  98.63%; precision:  95.92%; recall:  97.85%; FB1:  96.88
+
+2020-02-11 05:57:05,775 - log\train.log - INFO -            FOREST: precision:  95.53%; recall:  99.73%; FB1:  97.58  5011
+
+2020-02-11 05:57:05,775 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 05:57:05,775 - log\train.log - INFO -              UNIT: precision:  99.17%; recall:  99.17%; FB1:  99.17  600
+
+2020-02-11 05:57:05,837 - log\train.log - INFO - new best test f1 score:96.880
+2020-02-11 06:08:41,775 - log\train.log - INFO - evaluate:dev
+2020-02-11 06:08:49,384 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5762 phrases; correct: 5383.
+
+2020-02-11 06:08:49,384 - log\train.log - INFO - accuracy:  97.39%; precision:  93.42%; recall:  96.12%; FB1:  94.75
+
+2020-02-11 06:08:49,384 - log\train.log - INFO -            FOREST: precision:  92.75%; recall:  99.75%; FB1:  96.13  5162
+
+2020-02-11 06:08:49,384 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 06:08:49,384 - log\train.log - INFO -              UNIT: precision:  99.17%; recall:  99.17%; FB1:  99.17  600
+
+2020-02-11 06:08:49,446 - log\train.log - INFO - new best dev f1 score:94.750
+2020-02-11 06:08:50,165 - log\train.log - INFO - model saved
+2020-02-11 06:08:50,165 - log\train.log - INFO - evaluate:test
+2020-02-11 06:08:57,665 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5584 phrases; correct: 5385.
+
+2020-02-11 06:08:57,665 - log\train.log - INFO - accuracy:  98.67%; precision:  96.44%; recall:  97.91%; FB1:  97.17
+
+2020-02-11 06:08:57,665 - log\train.log - INFO -            FOREST: precision:  96.11%; recall:  99.79%; FB1:  97.91  4984
+
+2020-02-11 06:08:57,665 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 06:08:57,665 - log\train.log - INFO -              UNIT: precision:  99.17%; recall:  99.17%; FB1:  99.17  600
+
+2020-02-11 06:08:57,743 - log\train.log - INFO - new best test f1 score:97.170
+2020-02-11 06:20:32,748 - log\train.log - INFO - evaluate:dev
+2020-02-11 06:20:40,342 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5675 phrases; correct: 5385.
+
+2020-02-11 06:20:40,342 - log\train.log - INFO - accuracy:  97.53%; precision:  94.89%; recall:  96.16%; FB1:  95.52
+
+2020-02-11 06:20:40,342 - log\train.log - INFO -            FOREST: precision:  94.34%; recall:  99.75%; FB1:  96.97  5075
+
+2020-02-11 06:20:40,342 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 06:20:40,357 - log\train.log - INFO -              UNIT: precision:  99.50%; recall:  99.50%; FB1:  99.50  600
+
+2020-02-11 06:20:40,420 - log\train.log - INFO - new best dev f1 score:95.520
+2020-02-11 06:20:41,138 - log\train.log - INFO - model saved
+2020-02-11 06:20:41,138 - log\train.log - INFO - evaluate:test
+2020-02-11 06:20:48,638 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5530 phrases; correct: 5389.
+
+2020-02-11 06:20:48,638 - log\train.log - INFO - accuracy:  98.75%; precision:  97.45%; recall:  97.98%; FB1:  97.72
+
+2020-02-11 06:20:48,638 - log\train.log - INFO -            FOREST: precision:  97.14%; recall:  99.83%; FB1:  98.47  4933
+
+2020-02-11 06:20:48,638 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 06:20:48,638 - log\train.log - INFO -              UNIT: precision: 100.00%; recall:  99.50%; FB1:  99.75  597
+
+2020-02-11 06:20:48,701 - log\train.log - INFO - new best test f1 score:97.720
+2020-02-11 06:32:20,107 - log\train.log - INFO - evaluate:dev
+2020-02-11 06:32:27,716 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5726 phrases; correct: 5388.
+
+2020-02-11 06:32:27,716 - log\train.log - INFO - accuracy:  98.01%; precision:  94.10%; recall:  96.21%; FB1:  95.14
+
+2020-02-11 06:32:27,716 - log\train.log - INFO -            FOREST: precision:  97.71%; recall:  99.75%; FB1:  98.72  4900
+
+2020-02-11 06:32:27,716 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  114
+
+2020-02-11 06:32:27,716 - log\train.log - INFO -              UNIT: precision:  84.27%; recall: 100.00%; FB1:  91.46  712
+
+2020-02-11 06:32:27,716 - log\train.log - INFO - evaluate:test
+2020-02-11 06:32:35,154 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5508 phrases; correct: 5388.
+
+2020-02-11 06:32:35,154 - log\train.log - INFO - accuracy:  98.79%; precision:  97.82%; recall:  97.96%; FB1:  97.89
+
+2020-02-11 06:32:35,154 - log\train.log - INFO -            FOREST: precision:  97.56%; recall:  99.79%; FB1:  98.66  4910
+
+2020-02-11 06:32:35,154 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  0
+
+2020-02-11 06:32:35,154 - log\train.log - INFO -              UNIT: precision: 100.00%; recall:  99.67%; FB1:  99.83  598
+
+2020-02-11 06:32:35,232 - log\train.log - INFO - new best test f1 score:97.890
+2020-02-11 06:44:13,148 - log\train.log - INFO - evaluate:dev
+2020-02-11 06:44:20,726 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5807 phrases; correct: 5385.
+
+2020-02-11 06:44:20,726 - log\train.log - INFO - accuracy:  98.49%; precision:  92.73%; recall:  96.16%; FB1:  94.42
+
+2020-02-11 06:44:20,726 - log\train.log - INFO -            FOREST: precision:  99.44%; recall:  99.69%; FB1:  99.56  4812
+
+2020-02-11 06:44:20,726 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  198
+
+2020-02-11 06:44:20,726 - log\train.log - INFO -              UNIT: precision:  75.28%; recall: 100.00%; FB1:  85.90  797
+
+2020-02-11 06:44:20,726 - log\train.log - INFO - evaluate:test
+2020-02-11 06:44:28,226 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5601 phrases; correct: 5390.
+
+2020-02-11 06:44:28,226 - log\train.log - INFO - accuracy:  99.21%; precision:  96.23%; recall:  98.00%; FB1:  97.11
+
+2020-02-11 06:44:28,226 - log\train.log - INFO -            FOREST: precision:  99.60%; recall:  99.79%; FB1:  99.70  4809
+
+2020-02-11 06:44:28,226 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  94
+
+2020-02-11 06:44:28,226 - log\train.log - INFO -              UNIT: precision:  85.96%; recall: 100.00%; FB1:  92.45  698
+
+2020-02-11 06:56:47,334 - log\train.log - INFO - evaluate:dev
+2020-02-11 06:56:55,006 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5821 phrases; correct: 5385.
+
+2020-02-11 06:56:55,006 - log\train.log - INFO - accuracy:  98.63%; precision:  92.51%; recall:  96.16%; FB1:  94.30
+
+2020-02-11 06:56:55,006 - log\train.log - INFO -            FOREST: precision:  99.46%; recall:  99.69%; FB1:  99.57  4811
+
+2020-02-11 06:56:55,006 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  203
+
+2020-02-11 06:56:55,006 - log\train.log - INFO -              UNIT: precision:  74.35%; recall: 100.00%; FB1:  85.29  807
+
+2020-02-11 06:56:55,006 - log\train.log - INFO - evaluate:test
+2020-02-11 06:57:02,443 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5607 phrases; correct: 5389.
+
+2020-02-11 06:57:02,443 - log\train.log - INFO - accuracy:  99.31%; precision:  96.11%; recall:  97.98%; FB1:  97.04
+
+2020-02-11 06:57:02,443 - log\train.log - INFO -            FOREST: precision:  99.63%; recall:  99.77%; FB1:  99.70  4807
+
+2020-02-11 06:57:02,443 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  100
+
+2020-02-11 06:57:02,443 - log\train.log - INFO -              UNIT: precision:  85.71%; recall: 100.00%; FB1:  92.31  700
+
+2020-02-11 07:09:08,114 - log\train.log - INFO - evaluate:dev
+2020-02-11 07:09:15,701 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5850 phrases; correct: 5387.
+
+2020-02-11 07:09:15,701 - log\train.log - INFO - accuracy:  98.80%; precision:  92.09%; recall:  96.20%; FB1:  94.10
+
+2020-02-11 07:09:15,701 - log\train.log - INFO -            FOREST: precision:  99.46%; recall:  99.73%; FB1:  99.59  4813
+
+2020-02-11 07:09:15,701 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  220
+
+2020-02-11 07:09:15,701 - log\train.log - INFO -              UNIT: precision:  73.44%; recall: 100.00%; FB1:  84.69  817
+
+2020-02-11 07:09:15,701 - log\train.log - INFO - evaluate:test
+2020-02-11 07:09:23,185 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5610 phrases; correct: 5389.
+
+2020-02-11 07:09:23,185 - log\train.log - INFO - accuracy:  99.38%; precision:  96.06%; recall:  97.98%; FB1:  97.01
+
+2020-02-11 07:09:23,185 - log\train.log - INFO -            FOREST: precision:  99.69%; recall:  99.77%; FB1:  99.73  4804
+
+2020-02-11 07:09:23,185 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  103
+
+2020-02-11 07:09:23,185 - log\train.log - INFO -              UNIT: precision:  85.35%; recall: 100.00%; FB1:  92.10  703
+
+2020-02-11 07:21:42,605 - log\train.log - INFO - evaluate:dev
+2020-02-11 07:21:50,183 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5849 phrases; correct: 5391.
+
+2020-02-11 07:21:50,183 - log\train.log - INFO - accuracy:  98.96%; precision:  92.17%; recall:  96.27%; FB1:  94.17
+
+2020-02-11 07:21:50,183 - log\train.log - INFO -            FOREST: precision:  99.42%; recall:  99.75%; FB1:  99.58  4816
+
+2020-02-11 07:21:50,183 - log\train.log - INFO -              PARK: precision:   1.34%; recall:   1.50%; FB1:   1.42  224
+
+2020-02-11 07:21:50,183 - log\train.log - INFO -              UNIT: precision:  74.17%; recall: 100.00%; FB1:  85.17  809
+
+2020-02-11 07:21:50,183 - log\train.log - INFO - evaluate:test
+2020-02-11 07:21:57,636 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5613 phrases; correct: 5391.
+
+2020-02-11 07:21:57,636 - log\train.log - INFO - accuracy:  99.45%; precision:  96.04%; recall:  98.02%; FB1:  97.02
+
+2020-02-11 07:21:57,636 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.83%; FB1:  99.79  4804
+
+2020-02-11 07:21:57,636 - log\train.log - INFO -              PARK: precision:   0.00%; recall:   0.00%; FB1:   0.00  105
+
+2020-02-11 07:21:57,636 - log\train.log - INFO -              UNIT: precision:  85.09%; recall:  99.83%; FB1:  91.87  704
+
+2020-02-11 07:33:53,507 - log\train.log - INFO - evaluate:dev
+2020-02-11 07:34:01,194 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5842 phrases; correct: 5398.
+
+2020-02-11 07:34:01,194 - log\train.log - INFO - accuracy:  99.05%; precision:  92.40%; recall:  96.39%; FB1:  94.35
+
+2020-02-11 07:34:01,194 - log\train.log - INFO -            FOREST: precision:  99.50%; recall:  99.83%; FB1:  99.67  4816
+
+2020-02-11 07:34:01,194 - log\train.log - INFO -              PARK: precision:   2.69%; recall:   3.00%; FB1:   2.84  223
+
+2020-02-11 07:34:01,194 - log\train.log - INFO -              UNIT: precision:  74.72%; recall: 100.00%; FB1:  85.53  803
+
+2020-02-11 07:34:01,194 - log\train.log - INFO - evaluate:test
+2020-02-11 07:34:08,694 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5625 phrases; correct: 5393.
+
+2020-02-11 07:34:08,694 - log\train.log - INFO - accuracy:  99.50%; precision:  95.88%; recall:  98.05%; FB1:  96.95
+
+2020-02-11 07:34:08,694 - log\train.log - INFO -            FOREST: precision:  99.77%; recall:  99.85%; FB1:  99.81  4804
+
+2020-02-11 07:34:08,694 - log\train.log - INFO -              PARK: precision:   0.89%; recall:   1.00%; FB1:   0.94  112
+
+2020-02-11 07:34:08,694 - log\train.log - INFO -              UNIT: precision:  84.49%; recall:  99.83%; FB1:  91.52  709
+
+2020-02-11 07:45:55,697 - log\train.log - INFO - evaluate:dev
+2020-02-11 07:46:03,291 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5848 phrases; correct: 5404.
+
+2020-02-11 07:46:03,291 - log\train.log - INFO - accuracy:  99.15%; precision:  92.41%; recall:  96.50%; FB1:  94.41
+
+2020-02-11 07:46:03,291 - log\train.log - INFO -            FOREST: precision:  99.38%; recall:  99.83%; FB1:  99.61  4822
+
+2020-02-11 07:46:03,291 - log\train.log - INFO -              PARK: precision:   5.24%; recall:   6.00%; FB1:   5.59  229
+
+2020-02-11 07:46:03,291 - log\train.log - INFO -              UNIT: precision:  75.28%; recall: 100.00%; FB1:  85.90  797
+
+2020-02-11 07:46:03,291 - log\train.log - INFO - evaluate:test
+2020-02-11 07:46:10,869 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5616 phrases; correct: 5395.
+
+2020-02-11 07:46:10,869 - log\train.log - INFO - accuracy:  99.59%; precision:  96.06%; recall:  98.09%; FB1:  97.07
+
+2020-02-11 07:46:10,869 - log\train.log - INFO -            FOREST: precision:  99.77%; recall:  99.88%; FB1:  99.82  4805
+
+2020-02-11 07:46:10,869 - log\train.log - INFO -              PARK: precision:   1.85%; recall:   2.00%; FB1:   1.92  108
+
+2020-02-11 07:46:10,869 - log\train.log - INFO -              UNIT: precision:  85.21%; recall:  99.83%; FB1:  91.94  703
+
+2020-02-11 07:57:57,085 - log\train.log - INFO - evaluate:dev
+2020-02-11 07:58:04,678 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5848 phrases; correct: 5413.
+
+2020-02-11 07:58:04,678 - log\train.log - INFO - accuracy:  99.20%; precision:  92.56%; recall:  96.66%; FB1:  94.57
+
+2020-02-11 07:58:04,678 - log\train.log - INFO -            FOREST: precision:  99.30%; recall:  99.85%; FB1:  99.57  4827
+
+2020-02-11 07:58:04,678 - log\train.log - INFO -              PARK: precision:   8.66%; recall:  10.00%; FB1:   9.28  231
+
+2020-02-11 07:58:04,678 - log\train.log - INFO -              UNIT: precision:  75.95%; recall: 100.00%; FB1:  86.33  790
+
+2020-02-11 07:58:04,678 - log\train.log - INFO - evaluate:test
+2020-02-11 07:58:12,116 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5603 phrases; correct: 5400.
+
+2020-02-11 07:58:12,116 - log\train.log - INFO - accuracy:  99.63%; precision:  96.38%; recall:  98.18%; FB1:  97.27
+
+2020-02-11 07:58:12,116 - log\train.log - INFO -            FOREST: precision:  99.77%; recall:  99.92%; FB1:  99.84  4807
+
+2020-02-11 07:58:12,116 - log\train.log - INFO -              PARK: precision:   4.85%; recall:   5.00%; FB1:   4.93  103
+
+2020-02-11 07:58:12,116 - log\train.log - INFO -              UNIT: precision:  86.44%; recall:  99.83%; FB1:  92.65  693
+
+2020-02-11 08:10:07,192 - log\train.log - INFO - evaluate:dev
+2020-02-11 08:10:14,864 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5846 phrases; correct: 5433.
+
+2020-02-11 08:10:14,864 - log\train.log - INFO - accuracy:  99.26%; precision:  92.94%; recall:  97.02%; FB1:  94.93
+
+2020-02-11 08:10:14,864 - log\train.log - INFO -            FOREST: precision:  99.36%; recall:  99.90%; FB1:  99.63  4826
+
+2020-02-11 08:10:14,864 - log\train.log - INFO -              PARK: precision:  15.77%; recall:  19.00%; FB1:  17.23  241
+
+2020-02-11 08:10:14,864 - log\train.log - INFO -              UNIT: precision:  77.02%; recall: 100.00%; FB1:  87.02  779
+
+2020-02-11 08:10:14,864 - log\train.log - INFO - evaluate:test
+2020-02-11 08:10:22,270 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5599 phrases; correct: 5411.
+
+2020-02-11 08:10:22,270 - log\train.log - INFO - accuracy:  99.65%; precision:  96.64%; recall:  98.38%; FB1:  97.50
+
+2020-02-11 08:10:22,270 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.92%; FB1:  99.83  4808
+
+2020-02-11 08:10:22,270 - log\train.log - INFO -              PARK: precision:  14.95%; recall:  16.00%; FB1:  15.46  107
+
+2020-02-11 08:10:22,270 - log\train.log - INFO -              UNIT: precision:  87.57%; recall:  99.83%; FB1:  93.30  684
+
+2020-02-11 08:22:35,315 - log\train.log - INFO - evaluate:dev
+2020-02-11 08:22:42,972 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5811 phrases; correct: 5451.
+
+2020-02-11 08:22:42,972 - log\train.log - INFO - accuracy:  99.30%; precision:  93.80%; recall:  97.34%; FB1:  95.54
+
+2020-02-11 08:22:42,972 - log\train.log - INFO -            FOREST: precision:  99.34%; recall:  99.90%; FB1:  99.62  4827
+
+2020-02-11 08:22:42,972 - log\train.log - INFO -              PARK: precision:  23.93%; recall:  28.00%; FB1:  25.81  234
+
+2020-02-11 08:22:42,972 - log\train.log - INFO -              UNIT: precision:  80.00%; recall: 100.00%; FB1:  88.89  750
+
+2020-02-11 08:22:43,050 - log\train.log - INFO - new best dev f1 score:95.540
+2020-02-11 08:22:44,706 - log\train.log - INFO - model saved
+2020-02-11 08:22:44,706 - log\train.log - INFO - evaluate:test
+2020-02-11 08:22:52,144 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5591 phrases; correct: 5422.
+
+2020-02-11 08:22:52,144 - log\train.log - INFO - accuracy:  99.68%; precision:  96.98%; recall:  98.58%; FB1:  97.77
+
+2020-02-11 08:22:52,144 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.96%; FB1:  99.85  4810
+
+2020-02-11 08:22:52,144 - log\train.log - INFO -              PARK: precision:  22.22%; recall:  24.00%; FB1:  23.08  108
+
+2020-02-11 08:22:52,144 - log\train.log - INFO -              UNIT: precision:  89.15%; recall: 100.00%; FB1:  94.27  673
+
+2020-02-11 08:34:18,319 - log\train.log - INFO - evaluate:dev
+2020-02-11 08:34:26,053 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5767 phrases; correct: 5474.
+
+2020-02-11 08:34:26,053 - log\train.log - INFO - accuracy:  99.36%; precision:  94.92%; recall:  97.75%; FB1:  96.31
+
+2020-02-11 08:34:26,053 - log\train.log - INFO -            FOREST: precision:  99.56%; recall:  99.92%; FB1:  99.74  4817
+
+2020-02-11 08:34:26,053 - log\train.log - INFO -              PARK: precision:  34.67%; recall:  39.00%; FB1:  36.71  225
+
+2020-02-11 08:34:26,053 - log\train.log - INFO -              UNIT: precision:  82.76%; recall: 100.00%; FB1:  90.57  725
+
+2020-02-11 08:34:26,131 - log\train.log - INFO - new best dev f1 score:96.310
+2020-02-11 08:34:26,866 - log\train.log - INFO - model saved
+2020-02-11 08:34:26,866 - log\train.log - INFO - evaluate:test
+2020-02-11 08:34:34,428 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5581 phrases; correct: 5431.
+
+2020-02-11 08:34:34,428 - log\train.log - INFO - accuracy:  99.69%; precision:  97.31%; recall:  98.75%; FB1:  98.02
+
+2020-02-11 08:34:34,428 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.96%; FB1:  99.85  4810
+
+2020-02-11 08:34:34,428 - log\train.log - INFO -              PARK: precision:  30.28%; recall:  33.00%; FB1:  31.58  109
+
+2020-02-11 08:34:34,428 - log\train.log - INFO -              UNIT: precision:  90.63%; recall: 100.00%; FB1:  95.09  662
+
+2020-02-11 08:34:34,491 - log\train.log - INFO - new best test f1 score:98.020
+2020-02-11 08:46:41,762 - log\train.log - INFO - evaluate:dev
+2020-02-11 08:46:49,387 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5749 phrases; correct: 5488.
+
+2020-02-11 08:46:49,387 - log\train.log - INFO - accuracy:  99.39%; precision:  95.46%; recall:  98.00%; FB1:  96.71
+
+2020-02-11 08:46:49,387 - log\train.log - INFO -            FOREST: precision:  99.63%; recall:  99.92%; FB1:  99.77  4814
+
+2020-02-11 08:46:49,387 - log\train.log - INFO -              PARK: precision:  40.89%; recall:  46.00%; FB1:  43.29  225
+
+2020-02-11 08:46:49,387 - log\train.log - INFO -              UNIT: precision:  84.51%; recall: 100.00%; FB1:  91.60  710
+
+2020-02-11 08:46:49,465 - log\train.log - INFO - new best dev f1 score:96.710
+2020-02-11 08:46:51,043 - log\train.log - INFO - model saved
+2020-02-11 08:46:51,043 - log\train.log - INFO - evaluate:test
+2020-02-11 08:46:58,480 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5570 phrases; correct: 5440.
+
+2020-02-11 08:46:58,480 - log\train.log - INFO - accuracy:  99.70%; precision:  97.67%; recall:  98.91%; FB1:  98.28
+
+2020-02-11 08:46:58,480 - log\train.log - INFO -            FOREST: precision:  99.79%; recall:  99.92%; FB1:  99.85  4806
+
+2020-02-11 08:46:58,480 - log\train.log - INFO -              PARK: precision:  40.00%; recall:  44.00%; FB1:  41.90  110
+
+2020-02-11 08:46:58,480 - log\train.log - INFO -              UNIT: precision:  91.74%; recall: 100.00%; FB1:  95.69  654
+
+2020-02-11 08:46:58,558 - log\train.log - INFO - new best test f1 score:98.280
+2020-02-11 08:58:48,880 - log\train.log - INFO - evaluate:dev
+2020-02-11 08:58:56,568 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5718 phrases; correct: 5510.
+
+2020-02-11 08:58:56,568 - log\train.log - INFO - accuracy:  99.45%; precision:  96.36%; recall:  98.39%; FB1:  97.37
+
+2020-02-11 08:58:56,568 - log\train.log - INFO -            FOREST: precision:  99.67%; recall:  99.92%; FB1:  99.79  4812
+
+2020-02-11 08:58:56,568 - log\train.log - INFO -              PARK: precision:  51.35%; recall:  57.00%; FB1:  54.03  222
+
+2020-02-11 08:58:56,568 - log\train.log - INFO -              UNIT: precision:  87.72%; recall: 100.00%; FB1:  93.46  684
+
+2020-02-11 08:58:56,677 - log\train.log - INFO - new best dev f1 score:97.370
+2020-02-11 08:58:58,458 - log\train.log - INFO - model saved
+2020-02-11 08:58:58,458 - log\train.log - INFO - evaluate:test
+2020-02-11 08:59:05,989 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5556 phrases; correct: 5453.
+
+2020-02-11 08:59:05,989 - log\train.log - INFO - accuracy:  99.71%; precision:  98.15%; recall:  99.15%; FB1:  98.64
+
+2020-02-11 08:59:05,989 - log\train.log - INFO -            FOREST: precision:  99.81%; recall:  99.92%; FB1:  99.86  4805
+
+2020-02-11 08:59:05,989 - log\train.log - INFO -              PARK: precision:  52.29%; recall:  57.00%; FB1:  54.55  109
+
+2020-02-11 08:59:05,989 - log\train.log - INFO -              UNIT: precision:  93.46%; recall: 100.00%; FB1:  96.62  642
+
+2020-02-11 08:59:06,068 - log\train.log - INFO - new best test f1 score:98.640
+2020-02-11 09:11:27,793 - log\train.log - INFO - evaluate:dev
+2020-02-11 09:11:35,465 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5710 phrases; correct: 5521.
+
+2020-02-11 09:11:35,465 - log\train.log - INFO - accuracy:  99.51%; precision:  96.69%; recall:  98.59%; FB1:  97.63
+
+2020-02-11 09:11:35,465 - log\train.log - INFO -            FOREST: precision:  99.73%; recall:  99.92%; FB1:  99.82  4809
+
+2020-02-11 09:11:35,465 - log\train.log - INFO -              PARK: precision:  55.56%; recall:  62.50%; FB1:  58.82  225
+
+2020-02-11 09:11:35,465 - log\train.log - INFO -              UNIT: precision:  88.76%; recall: 100.00%; FB1:  94.04  676
+
+2020-02-11 09:11:35,575 - log\train.log - INFO - new best dev f1 score:97.630
+2020-02-11 09:11:36,309 - log\train.log - INFO - model saved
+2020-02-11 09:11:36,309 - log\train.log - INFO - evaluate:test
+2020-02-11 09:11:43,809 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5549 phrases; correct: 5463.
+
+2020-02-11 09:11:43,809 - log\train.log - INFO - accuracy:  99.72%; precision:  98.45%; recall:  99.33%; FB1:  98.89
+
+2020-02-11 09:11:43,809 - log\train.log - INFO -            FOREST: precision:  99.81%; recall:  99.94%; FB1:  99.88  4806
+
+2020-02-11 09:11:43,809 - log\train.log - INFO -              PARK: precision:  59.46%; recall:  66.00%; FB1:  62.56  111
+
+2020-02-11 09:11:43,809 - log\train.log - INFO -              UNIT: precision:  94.94%; recall: 100.00%; FB1:  97.40  632
+
+2020-02-11 09:11:43,903 - log\train.log - INFO - new best test f1 score:98.890
+2020-02-11 09:24:28,728 - log\train.log - INFO - evaluate:dev
+2020-02-11 09:24:36,510 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5692 phrases; correct: 5530.
+
+2020-02-11 09:24:36,510 - log\train.log - INFO - accuracy:  99.56%; precision:  97.15%; recall:  98.75%; FB1:  97.95
+
+2020-02-11 09:24:36,510 - log\train.log - INFO -            FOREST: precision:  99.73%; recall:  99.92%; FB1:  99.82  4809
+
+2020-02-11 09:24:36,510 - log\train.log - INFO -              PARK: precision:  60.09%; recall:  67.00%; FB1:  63.36  223
+
+2020-02-11 09:24:36,510 - log\train.log - INFO -              UNIT: precision:  90.91%; recall: 100.00%; FB1:  95.24  660
+
+2020-02-11 09:24:36,650 - log\train.log - INFO - new best dev f1 score:97.950
+2020-02-11 09:24:37,432 - log\train.log - INFO - model saved
+2020-02-11 09:24:37,432 - log\train.log - INFO - evaluate:test
+2020-02-11 09:24:44,947 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5546 phrases; correct: 5465.
+
+2020-02-11 09:24:44,947 - log\train.log - INFO - accuracy:  99.73%; precision:  98.54%; recall:  99.36%; FB1:  98.95
+
+2020-02-11 09:24:44,947 - log\train.log - INFO -            FOREST: precision:  99.81%; recall:  99.94%; FB1:  99.88  4806
+
+2020-02-11 09:24:44,947 - log\train.log - INFO -              PARK: precision:  61.82%; recall:  68.00%; FB1:  64.76  110
+
+2020-02-11 09:24:44,947 - log\train.log - INFO -              UNIT: precision:  95.24%; recall: 100.00%; FB1:  97.56  630
+
+2020-02-11 09:24:45,025 - log\train.log - INFO - new best test f1 score:98.950
+2020-02-11 09:37:09,510 - log\train.log - INFO - evaluate:dev
+2020-02-11 09:37:17,195 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5673 phrases; correct: 5540.
+
+2020-02-11 09:37:17,195 - log\train.log - INFO - accuracy:  99.60%; precision:  97.66%; recall:  98.93%; FB1:  98.29
+
+2020-02-11 09:37:17,195 - log\train.log - INFO -            FOREST: precision:  99.73%; recall:  99.92%; FB1:  99.82  4809
+
+2020-02-11 09:37:17,195 - log\train.log - INFO -              PARK: precision:  66.06%; recall:  72.00%; FB1:  68.90  218
+
+2020-02-11 09:37:17,195 - log\train.log - INFO -              UNIT: precision:  92.88%; recall: 100.00%; FB1:  96.31  646
+
+2020-02-11 09:37:17,289 - log\train.log - INFO - new best dev f1 score:98.290
+2020-02-11 09:37:18,023 - log\train.log - INFO - model saved
+2020-02-11 09:37:18,023 - log\train.log - INFO - evaluate:test
+2020-02-11 09:37:25,445 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5537 phrases; correct: 5470.
+
+2020-02-11 09:37:25,445 - log\train.log - INFO - accuracy:  99.75%; precision:  98.79%; recall:  99.45%; FB1:  99.12
+
+2020-02-11 09:37:25,445 - log\train.log - INFO -            FOREST: precision:  99.85%; recall:  99.96%; FB1:  99.91  4805
+
+2020-02-11 09:37:25,445 - log\train.log - INFO -              PARK: precision:  66.06%; recall:  72.00%; FB1:  68.90  109
+
+2020-02-11 09:37:25,445 - log\train.log - INFO -              UNIT: precision:  96.31%; recall: 100.00%; FB1:  98.12  623
+
+2020-02-11 09:37:25,539 - log\train.log - INFO - new best test f1 score:99.120
+2020-02-11 09:50:04,007 - log\train.log - INFO - evaluate:dev
+2020-02-11 09:50:11,695 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5652 phrases; correct: 5552.
+
+2020-02-11 09:50:11,695 - log\train.log - INFO - accuracy:  99.66%; precision:  98.23%; recall:  99.14%; FB1:  98.68
+
+2020-02-11 09:50:11,695 - log\train.log - INFO -            FOREST: precision:  99.73%; recall:  99.92%; FB1:  99.82  4809
+
+2020-02-11 09:50:11,695 - log\train.log - INFO -              PARK: precision:  73.24%; recall:  78.00%; FB1:  75.54  213
+
+2020-02-11 09:50:11,695 - log\train.log - INFO -              UNIT: precision:  95.24%; recall: 100.00%; FB1:  97.56  630
+
+2020-02-11 09:50:11,773 - log\train.log - INFO - new best dev f1 score:98.680
+2020-02-11 09:50:12,523 - log\train.log - INFO - model saved
+2020-02-11 09:50:12,523 - log\train.log - INFO - evaluate:test
+2020-02-11 09:50:20,038 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5531 phrases; correct: 5476.
+
+2020-02-11 09:50:20,038 - log\train.log - INFO - accuracy:  99.80%; precision:  99.01%; recall:  99.56%; FB1:  99.28
+
+2020-02-11 09:50:20,038 - log\train.log - INFO -            FOREST: precision:  99.85%; recall:  99.96%; FB1:  99.91  4805
+
+2020-02-11 09:50:20,038 - log\train.log - INFO -              PARK: precision:  72.22%; recall:  78.00%; FB1:  75.00  108
+
+2020-02-11 09:50:20,038 - log\train.log - INFO -              UNIT: precision:  97.09%; recall: 100.00%; FB1:  98.52  618
+
+2020-02-11 09:50:20,116 - log\train.log - INFO - new best test f1 score:99.280
+2020-02-11 10:02:53,082 - log\train.log - INFO - evaluate:dev
+2020-02-11 10:03:00,676 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5627 phrases; correct: 5567.
+
+2020-02-11 10:03:00,676 - log\train.log - INFO - accuracy:  99.71%; precision:  98.93%; recall:  99.41%; FB1:  99.17
+
+2020-02-11 10:03:00,676 - log\train.log - INFO -            FOREST: precision:  99.79%; recall:  99.92%; FB1:  99.85  4806
+
+2020-02-11 10:03:00,676 - log\train.log - INFO -              PARK: precision:  82.61%; recall:  85.50%; FB1:  84.03  207
+
+2020-02-11 10:03:00,676 - log\train.log - INFO -              UNIT: precision:  97.72%; recall: 100.00%; FB1:  98.85  614
+
+2020-02-11 10:03:01,629 - log\train.log - INFO - new best dev f1 score:99.170
+2020-02-11 10:03:02,332 - log\train.log - INFO - model saved
+2020-02-11 10:03:02,332 - log\train.log - INFO - evaluate:test
+2020-02-11 10:03:09,769 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5518 phrases; correct: 5480.
+
+2020-02-11 10:03:09,769 - log\train.log - INFO - accuracy:  99.82%; precision:  99.31%; recall:  99.64%; FB1:  99.47
+
+2020-02-11 10:03:09,769 - log\train.log - INFO -            FOREST: precision:  99.88%; recall:  99.96%; FB1:  99.92  4804
+
+2020-02-11 10:03:09,769 - log\train.log - INFO -              PARK: precision:  78.85%; recall:  82.00%; FB1:  80.39  104
+
+2020-02-11 10:03:09,769 - log\train.log - INFO -              UNIT: precision:  98.36%; recall: 100.00%; FB1:  99.17  610
+
+2020-02-11 10:03:09,848 - log\train.log - INFO - new best test f1 score:99.470
+2020-02-11 10:15:28,299 - log\train.log - INFO - evaluate:dev
+2020-02-11 10:15:35,955 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5624 phrases; correct: 5572.
+
+2020-02-11 10:15:35,955 - log\train.log - INFO - accuracy:  99.74%; precision:  99.08%; recall:  99.50%; FB1:  99.29
+
+2020-02-11 10:15:35,955 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.92%; FB1:  99.83  4808
+
+2020-02-11 10:15:35,955 - log\train.log - INFO -              PARK: precision:  84.62%; recall:  88.00%; FB1:  86.27  208
+
+2020-02-11 10:15:35,955 - log\train.log - INFO -              UNIT: precision:  98.68%; recall: 100.00%; FB1:  99.34  608
+
+2020-02-11 10:15:36,033 - log\train.log - INFO - new best dev f1 score:99.290
+2020-02-11 10:15:37,908 - log\train.log - INFO - model saved
+2020-02-11 10:15:37,908 - log\train.log - INFO - evaluate:test
+2020-02-11 10:15:45,346 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5515 phrases; correct: 5482.
+
+2020-02-11 10:15:45,346 - log\train.log - INFO - accuracy:  99.84%; precision:  99.40%; recall:  99.67%; FB1:  99.54
+
+2020-02-11 10:15:45,346 - log\train.log - INFO -            FOREST: precision:  99.90%; recall:  99.96%; FB1:  99.93  4803
+
+2020-02-11 10:15:45,346 - log\train.log - INFO -              PARK: precision:  80.77%; recall:  84.00%; FB1:  82.35  104
+
+2020-02-11 10:15:45,346 - log\train.log - INFO -              UNIT: precision:  98.68%; recall: 100.00%; FB1:  99.34  608
+
+2020-02-11 10:15:45,424 - log\train.log - INFO - new best test f1 score:99.540
+2020-02-11 10:28:34,407 - log\train.log - INFO - evaluate:dev
+2020-02-11 10:28:42,125 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5616 phrases; correct: 5576.
+
+2020-02-11 10:28:42,125 - log\train.log - INFO - accuracy:  99.77%; precision:  99.29%; recall:  99.57%; FB1:  99.43
+
+2020-02-11 10:28:42,125 - log\train.log - INFO -            FOREST: precision:  99.77%; recall:  99.92%; FB1:  99.84  4807
+
+2020-02-11 10:28:42,125 - log\train.log - INFO -              PARK: precision:  87.38%; recall:  90.00%; FB1:  88.67  206
+
+2020-02-11 10:28:42,125 - log\train.log - INFO -              UNIT: precision:  99.50%; recall: 100.00%; FB1:  99.75  603
+
+2020-02-11 10:28:42,219 - log\train.log - INFO - new best dev f1 score:99.430
+2020-02-11 10:28:42,907 - log\train.log - INFO - model saved
+2020-02-11 10:28:42,907 - log\train.log - INFO - evaluate:test
+2020-02-11 10:28:50,469 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5517 phrases; correct: 5484.
+
+2020-02-11 10:28:50,469 - log\train.log - INFO - accuracy:  99.85%; precision:  99.40%; recall:  99.71%; FB1:  99.56
+
+2020-02-11 10:28:50,469 - log\train.log - INFO -            FOREST: precision:  99.88%; recall:  99.96%; FB1:  99.92  4804
+
+2020-02-11 10:28:50,469 - log\train.log - INFO -              PARK: precision:  81.90%; recall:  86.00%; FB1:  83.90  105
+
+2020-02-11 10:28:50,469 - log\train.log - INFO -              UNIT: precision:  98.68%; recall: 100.00%; FB1:  99.34  608
+
+2020-02-11 10:28:50,547 - log\train.log - INFO - new best test f1 score:99.560
+2020-02-11 10:41:30,680 - log\train.log - INFO - evaluate:dev
+2020-02-11 10:41:38,899 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5617 phrases; correct: 5577.
+
+2020-02-11 10:41:38,899 - log\train.log - INFO - accuracy:  99.80%; precision:  99.29%; recall:  99.59%; FB1:  99.44
+
+2020-02-11 10:41:38,899 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.92%; FB1:  99.83  4808
+
+2020-02-11 10:41:38,899 - log\train.log - INFO -              PARK: precision:  87.44%; recall:  90.50%; FB1:  88.94  207
+
+2020-02-11 10:41:38,899 - log\train.log - INFO -              UNIT: precision:  99.67%; recall: 100.00%; FB1:  99.83  602
+
+2020-02-11 10:41:39,321 - log\train.log - INFO - new best dev f1 score:99.440
+2020-02-11 10:41:40,227 - log\train.log - INFO - model saved
+2020-02-11 10:41:40,227 - log\train.log - INFO - evaluate:test
+2020-02-11 10:41:47,805 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5515 phrases; correct: 5487.
+
+2020-02-11 10:41:47,805 - log\train.log - INFO - accuracy:  99.88%; precision:  99.49%; recall:  99.76%; FB1:  99.63
+
+2020-02-11 10:41:47,805 - log\train.log - INFO -            FOREST: precision:  99.90%; recall:  99.96%; FB1:  99.93  4803
+
+2020-02-11 10:41:47,805 - log\train.log - INFO -              PARK: precision:  85.58%; recall:  89.00%; FB1:  87.25  104
+
+2020-02-11 10:41:47,805 - log\train.log - INFO -              UNIT: precision:  98.68%; recall: 100.00%; FB1:  99.34  608
+
+2020-02-11 10:41:47,883 - log\train.log - INFO - new best test f1 score:99.630
+2020-02-11 10:54:00,554 - log\train.log - INFO - evaluate:dev
+2020-02-11 10:54:08,507 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5617 phrases; correct: 5577.
+
+2020-02-11 10:54:08,507 - log\train.log - INFO - accuracy:  99.84%; precision:  99.29%; recall:  99.59%; FB1:  99.44
+
+2020-02-11 10:54:08,507 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.92%; FB1:  99.83  4808
+
+2020-02-11 10:54:08,507 - log\train.log - INFO -              PARK: precision:  87.02%; recall:  90.50%; FB1:  88.73  208
+
+2020-02-11 10:54:08,507 - log\train.log - INFO -              UNIT: precision:  99.83%; recall: 100.00%; FB1:  99.92  601
+
+2020-02-11 10:54:08,507 - log\train.log - INFO - evaluate:test
+2020-02-11 10:54:16,161 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5513 phrases; correct: 5487.
+
+2020-02-11 10:54:16,161 - log\train.log - INFO - accuracy:  99.91%; precision:  99.53%; recall:  99.76%; FB1:  99.65
+
+2020-02-11 10:54:16,161 - log\train.log - INFO -            FOREST: precision:  99.92%; recall:  99.96%; FB1:  99.94  4802
+
+2020-02-11 10:54:16,161 - log\train.log - INFO -              PARK: precision:  85.58%; recall:  89.00%; FB1:  87.25  104
+
+2020-02-11 10:54:16,161 - log\train.log - INFO -              UNIT: precision:  98.85%; recall: 100.00%; FB1:  99.42  607
+
+2020-02-11 10:54:16,255 - log\train.log - INFO - new best test f1 score:99.650
+2020-02-11 11:06:57,691 - log\train.log - INFO - evaluate:dev
+2020-02-11 11:07:05,347 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5619 phrases; correct: 5575.
+
+2020-02-11 11:07:05,347 - log\train.log - INFO - accuracy:  99.86%; precision:  99.22%; recall:  99.55%; FB1:  99.38
+
+2020-02-11 11:07:05,347 - log\train.log - INFO -            FOREST: precision:  99.75%; recall:  99.92%; FB1:  99.83  4808
+
+2020-02-11 11:07:05,347 - log\train.log - INFO -              PARK: precision:  85.24%; recall:  89.50%; FB1:  87.32  210
+
+2020-02-11 11:07:05,347 - log\train.log - INFO -              UNIT: precision:  99.83%; recall: 100.00%; FB1:  99.92  601
+
+2020-02-11 11:07:05,363 - log\train.log - INFO - evaluate:test
+2020-02-11 11:07:12,831 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5510 phrases; correct: 5488.
+
+2020-02-11 11:07:12,831 - log\train.log - INFO - accuracy:  99.93%; precision:  99.60%; recall:  99.78%; FB1:  99.69
+
+2020-02-11 11:07:12,831 - log\train.log - INFO -            FOREST: precision:  99.92%; recall:  99.96%; FB1:  99.94  4802
+
+2020-02-11 11:07:12,831 - log\train.log - INFO -              PARK: precision:  86.54%; recall:  90.00%; FB1:  88.24  104
+
+2020-02-11 11:07:12,831 - log\train.log - INFO -              UNIT: precision:  99.34%; recall: 100.00%; FB1:  99.67  604
+
+2020-02-11 11:07:12,941 - log\train.log - INFO - new best test f1 score:99.690
+2020-02-11 11:20:27,444 - log\train.log - INFO - evaluate:dev
+2020-02-11 11:20:35,100 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5623 phrases; correct: 5574.
+
+2020-02-11 11:20:35,100 - log\train.log - INFO - accuracy:  99.88%; precision:  99.13%; recall:  99.54%; FB1:  99.33
+
+2020-02-11 11:20:35,100 - log\train.log - INFO -            FOREST: precision:  99.79%; recall:  99.94%; FB1:  99.86  4807
+
+2020-02-11 11:20:35,100 - log\train.log - INFO -              PARK: precision:  82.33%; recall:  88.50%; FB1:  85.30  215
+
+2020-02-11 11:20:35,100 - log\train.log - INFO -              UNIT: precision:  99.83%; recall: 100.00%; FB1:  99.92  601
+
+2020-02-11 11:20:35,100 - log\train.log - INFO - evaluate:test
+2020-02-11 11:20:42,678 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5510 phrases; correct: 5488.
+
+2020-02-11 11:20:42,678 - log\train.log - INFO - accuracy:  99.95%; precision:  99.60%; recall:  99.78%; FB1:  99.69
+
+2020-02-11 11:20:42,678 - log\train.log - INFO -            FOREST: precision:  99.90%; recall:  99.96%; FB1:  99.93  4803
+
+2020-02-11 11:20:42,678 - log\train.log - INFO -              PARK: precision:  87.38%; recall:  90.00%; FB1:  88.67  103
+
+2020-02-11 11:20:42,678 - log\train.log - INFO -              UNIT: precision:  99.34%; recall: 100.00%; FB1:  99.67  604
+
+2020-02-11 11:34:30,915 - log\train.log - INFO - evaluate:dev
+2020-02-11 11:34:38,665 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5626 phrases; correct: 5574.
+
+2020-02-11 11:34:38,665 - log\train.log - INFO - accuracy:  99.91%; precision:  99.08%; recall:  99.54%; FB1:  99.31
+
+2020-02-11 11:34:38,665 - log\train.log - INFO -            FOREST: precision:  99.81%; recall:  99.96%; FB1:  99.89  4807
+
+2020-02-11 11:34:38,665 - log\train.log - INFO -              PARK: precision:  80.73%; recall:  88.00%; FB1:  84.21  218
+
+2020-02-11 11:34:38,665 - log\train.log - INFO -              UNIT: precision:  99.83%; recall: 100.00%; FB1:  99.92  601
+
+2020-02-11 11:34:38,665 - log\train.log - INFO - evaluate:test
+2020-02-11 11:34:46,196 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5510 phrases; correct: 5488.
+
+2020-02-11 11:34:46,196 - log\train.log - INFO - accuracy:  99.96%; precision:  99.60%; recall:  99.78%; FB1:  99.69
+
+2020-02-11 11:34:46,196 - log\train.log - INFO -            FOREST: precision:  99.90%; recall:  99.96%; FB1:  99.93  4803
+
+2020-02-11 11:34:46,196 - log\train.log - INFO -              PARK: precision:  87.38%; recall:  90.00%; FB1:  88.67  103
+
+2020-02-11 11:34:46,196 - log\train.log - INFO -              UNIT: precision:  99.34%; recall: 100.00%; FB1:  99.67  604
+
+2020-02-11 11:48:48,374 - log\train.log - INFO - evaluate:dev
+2020-02-11 11:48:56,499 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5626 phrases; correct: 5574.
+
+2020-02-11 11:48:56,515 - log\train.log - INFO - accuracy:  99.91%; precision:  99.08%; recall:  99.54%; FB1:  99.31
+
+2020-02-11 11:48:56,515 - log\train.log - INFO -            FOREST: precision:  99.85%; recall:  99.98%; FB1:  99.92  4806
+
+2020-02-11 11:48:56,515 - log\train.log - INFO -              PARK: precision:  79.91%; recall:  87.50%; FB1:  83.53  219
+
+2020-02-11 11:48:56,515 - log\train.log - INFO -              UNIT: precision:  99.83%; recall: 100.00%; FB1:  99.92  601
+
+2020-02-11 11:48:56,515 - log\train.log - INFO - evaluate:test
+2020-02-11 11:49:04,124 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5510 phrases; correct: 5488.
+
+2020-02-11 11:49:04,124 - log\train.log - INFO - accuracy:  99.96%; precision:  99.60%; recall:  99.78%; FB1:  99.69
+
+2020-02-11 11:49:04,124 - log\train.log - INFO -            FOREST: precision:  99.90%; recall:  99.96%; FB1:  99.93  4803
+
+2020-02-11 11:49:04,124 - log\train.log - INFO -              PARK: precision:  87.38%; recall:  90.00%; FB1:  88.67  103
+
+2020-02-11 11:49:04,124 - log\train.log - INFO -              UNIT: precision:  99.34%; recall: 100.00%; FB1:  99.67  604
+
+2020-02-11 12:02:58,650 - log\train.log - INFO - evaluate:dev
+2020-02-11 12:03:06,743 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5626 phrases; correct: 5573.
+
+2020-02-11 12:03:06,743 - log\train.log - INFO - accuracy:  99.92%; precision:  99.06%; recall:  99.52%; FB1:  99.29
+
+2020-02-11 12:03:06,743 - log\train.log - INFO -            FOREST: precision:  99.83%; recall:  99.96%; FB1:  99.90  4806
+
+2020-02-11 12:03:06,743 - log\train.log - INFO -              PARK: precision:  79.91%; recall:  87.50%; FB1:  83.53  219
+
+2020-02-11 12:03:06,743 - log\train.log - INFO -              UNIT: precision:  99.83%; recall: 100.00%; FB1:  99.92  601
+
+2020-02-11 12:03:06,743 - log\train.log - INFO - evaluate:test
+2020-02-11 12:03:14,228 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5510 phrases; correct: 5489.
+
+2020-02-11 12:03:14,228 - log\train.log - INFO - accuracy:  99.97%; precision:  99.62%; recall:  99.80%; FB1:  99.71
+
+2020-02-11 12:03:14,228 - log\train.log - INFO -            FOREST: precision:  99.90%; recall:  99.96%; FB1:  99.93  4803
+
+2020-02-11 12:03:14,228 - log\train.log - INFO -              PARK: precision:  88.35%; recall:  91.00%; FB1:  89.66  103
+
+2020-02-11 12:03:14,228 - log\train.log - INFO -              UNIT: precision:  99.34%; recall: 100.00%; FB1:  99.67  604
+
+2020-02-11 12:03:14,931 - log\train.log - INFO - new best test f1 score:99.710
+2020-02-11 12:16:26,592 - log\train.log - INFO - evaluate:dev
+2020-02-11 12:16:35,280 - log\train.log - INFO - processed 74542 tokens with 5600 phrases; found: 5627 phrases; correct: 5573.
+
+2020-02-11 12:16:35,280 - log\train.log - INFO - accuracy:  99.92%; precision:  99.04%; recall:  99.52%; FB1:  99.28
+
+2020-02-11 12:16:35,280 - log\train.log - INFO -            FOREST: precision:  99.81%; recall:  99.96%; FB1:  99.89  4807
+
+2020-02-11 12:16:35,280 - log\train.log - INFO -              PARK: precision:  80.28%; recall:  87.50%; FB1:  83.73  218
+
+2020-02-11 12:16:35,280 - log\train.log - INFO -              UNIT: precision:  99.67%; recall: 100.00%; FB1:  99.83  602
+
+2020-02-11 12:16:35,280 - log\train.log - INFO - evaluate:test
+2020-02-11 12:16:42,827 - log\train.log - INFO - processed 73106 tokens with 5500 phrases; found: 5509 phrases; correct: 5489.
+
+2020-02-11 12:16:42,827 - log\train.log - INFO - accuracy:  99.97%; precision:  99.64%; recall:  99.80%; FB1:  99.72
+
+2020-02-11 12:16:42,827 - log\train.log - INFO -            FOREST: precision:  99.92%; recall:  99.96%; FB1:  99.94  4802
+
+2020-02-11 12:16:42,842 - log\train.log - INFO -              PARK: precision:  88.35%; recall:  91.00%; FB1:  89.66  103
+
+2020-02-11 12:16:42,842 - log\train.log - INFO -              UNIT: precision:  99.34%; recall: 100.00%; FB1:  99.67  604
+
+2020-02-11 12:16:42,967 - log\train.log - INFO - new best test f1 score:99.720
